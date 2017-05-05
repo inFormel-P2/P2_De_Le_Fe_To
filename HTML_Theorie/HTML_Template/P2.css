@@ -1,7 +1,7 @@
 h1 {
 	font-size: 200%;
 	color: red;
-	font: verdana;
+	font: arial;
 }
 
 h2 {
@@ -15,13 +15,13 @@ h3 {
 	color: #6FBECC;
 	font: arial;
 }
-/*
+
 font-face {
 	font-family: 'Verdana';
     	font-weight: 400;
-        src: url('Verdana/Verdana.ttf') format('tff');
+        src: url('_Verdana/Verdana.ttf') format('tff');
 		}
-
+/*
 font-face{
     	font-family: 'Verdana';
     	font-weight: 700;

@@ -1,0 +1,17 @@
+h1 {
+	font-size: 200%;
+	color: blue;
+	font: arial;
+}
+
+h2 {
+	font-size: 150%;
+	color: gray;
+	font: arial;
+}
+
+h3 {
+	font-size: 100%;
+	color: black;
+	font: arial;
+}

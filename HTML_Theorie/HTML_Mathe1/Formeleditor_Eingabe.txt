@@ -1,0 +1,5 @@
+Kartesische Form:	z = x + j * y
+			https://www.zahlen-kern.de/editor/equations/dfa5.png
+
+Exponential Form:	z = r * \E^{ j * \phi } = r * [cos(\phi) + j * sin(\phi)]
+			https://www.zahlen-kern.de/editor/equations/dfa6.png
