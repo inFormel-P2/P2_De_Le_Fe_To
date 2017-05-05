@@ -1,0 +1,30 @@
+h1 {
+	font-size: 200%;
+	color: blue;
+	font: arial;
+}
+
+h2 {
+	font-size: 150%;
+	color: #6B979F;
+	font: arial;
+}
+
+h3 {
+	font-size: 100%;
+	color: #6FBECC;
+	font: arial;
+}
+
+font-face {
+	font-family: 'Verdana';
+    	font-weight: 400;
+        src: url('_Verdana/Verdana.ttf') format('tff');
+		}
+/*
+font-face{
+    	font-family: 'Verdana';
+    	font-weight: 700;
+        src: url('Verdana/Verdana Bold.ttf') format('tff');
+    	}
+        */
