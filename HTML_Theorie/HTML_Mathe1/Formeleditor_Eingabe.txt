@@ -1,5 +1,51 @@
 Kartesische Form:	z = x + j * y
 			https://www.zahlen-kern.de/editor/equations/dfa5.png
 
-Exponential Form:	z = r * \E^{ j * \phi } = r * [cos(\phi) + j * sin(\phi)]
-			https://www.zahlen-kern.de/editor/equations/dfa6.png
+Trigonometrische Form:	x = r * cos\left( \phi \right)
+			https://www.zahlen-kern.de/editor/equations/dgsh.png
+			y = r * sin\left( \phi \right)
+			https://www.zahlen-kern.de/editor/equations/dgsj.png
+			z = x + j * y = r * \left[ cos\left( \phi \right) + j * sin\left( \phi \right) \right]
+			https://www.zahlen-kern.de/editor/equations/dgsq.png
+
+Exponentailform:	z = r * \left[ cos\left( \phi \right) + j * sin\left( \phi \right) \right] = r * \E^{ j * \phi }
+			https://www.zahlen-kern.de/editor/equations/dgt4.png
+
+Betrag:			\left\lvert z \right\rvert = \left\lvert x + j * y \right\rvert = \sqrt{ x^{ 2 } + y^{ 2 } }
+			https://www.zahlen-kern.de/editor/equations/dgqf.png
+
+Konjugiert komplex:	z^\star = \left( x + j * y \right)^\star = x + j * \left( - y \right) = x - j * y
+			https://www.zahlen-kern.de/editor/equations/dgu1.png
+
+Z1 und Z2:		z_{ 1 } = x_{ 1 } + j * y_{ 1 }
+			https://www.zahlen-kern.de/editor/equations/dguk.png
+			z_{ 2 } = x_{ 2 } + j * y_{ 2 }
+			https://www.zahlen-kern.de/editor/equations/dgul.png
+
+Addition:		z_{ 1 } + z_{ 2 } = \left( x_{ 1 } + x_{ 2 } \right) + j * \left( y_{ 1 } + y_{ 2 } \right)
+			https://www.zahlen-kern.de/editor/equations/dgum.png
+
+Subtraktion:		z_{ 1 } - z_{ 2 } = \left( x_{ 1 } - x_{ 2 } \right) + j * \left( y_{ 1 } - y_{ 2 } \right)
+			https://www.zahlen-kern.de/editor/equations/dguq.png
+
+Multiplikation:		z_{ 1 } * z_{ 2 } = \left( x_{ 1 } + j * y_{ 1 } \right) * \left( x_{ 2 } + j * y_{ 2 } \right)
+			https://www.zahlen-kern.de/editor/equations/dgur.png
+			z_{ 1 } * z_{ 2 } = x_{ 1 } * x_{ 2 } + j * x_{ 1 } * y_{ 2 } + j * x_{ 2 } * y_{ 1 } + j^{ 2 } * y_{ 1 } * y_{ 2 }
+			https://www.zahlen-kern.de/editor/equations/dguy.png
+			z_{ 1 } * z_{ 2 } = x_{ 1 } * x_{ 2 } + j * \left( x_{ 1 } * y_{ 2 } + x_{ 2 } * y_{ 1 } \right) + \left( -1 \right) * y_{ 1 } * y_{ 2 }
+			https://www.zahlen-kern.de/editor/equations/dgv2.png
+			z_{ 1 } * z_{ 2 } = \left( x_{ 1 } * x_{ 2 } - y_{ 1 } * y_{ 2 } \right) + j * \left( x_{ 1 } * y_{ 2 } + x_{ 2 } * y_{ 1 } \right)
+			https://www.zahlen-kern.de/editor/equations/dgvb.png
+
+Division:		\frac{ z_{ 1 } }{ z_{ 2 } } = \frac{ z_{ 1 } * z_{ 2 }^\star}{ z_{ 2 } * z_{ 2 }^\star} = \frac{ \left( x_{ 1 } + j * y_{ 1 } \right) * \left( x_{ 2 } - j * y_{ 2 } \right) }{ \left( x_{ 2 } + j * y_{ 2 } \right) * \left( x_{ 2 } - j * y_{ 2 } \right) }
+			https://www.zahlen-kern.de/editor/equations/dgxh.png
+			\frac{ z_{ 1 } }{ z_{ 2 } } = \frac{ z_{ 1 } * z_{ 2 }^\star}{ z_{ 2 } * z_{ 2 }^\star} = \frac{ x_{ 1 } * x_{ 2 } - j * x_{ 1 } * y_{ 2 } + j * x_{ 2 } * y_{ 1 } - j^{ 2 } * y_{ 1 } * y_{ 2 } }{ x_{ 2 }^{ 2 }  - j^{ 2 } * y_{ 2 }^{ 2 }}
+			https://www.zahlen-kern.de/editor/equations/dgxe.png
+			\frac{ z_{ 1 } }{ z_{ 2 } } = \frac{ z_{ 1 } * z_{ 2 }^\star}{ z_{ 2 } * z_{ 2 }^\star} = \frac{ x_{ 1 } * x_{ 2 } + j * \left( x_{ 2 } * y_{ 1 } - x_{ 1 } * y_{ 2 } \right) - \left( -1 \right) * y_{ 1 } * y_{ 2 } }{ x_{ 2 }^{ 2 }  - \left( -1 \right) * y_{ 2 }^{ 2 }}
+			https://www.zahlen-kern.de/editor/equations/dgxn.png
+			\frac{ z_{ 1 } }{ z_{ 2 } } = \frac{ z_{ 1 } * z_{ 2 }^\star}{ z_{ 2 } * z_{ 2 }^\star} = \frac{ \left( x_{ 1 } * x_{ 2 } + y_{ 1 } * y_{ 2 } \right) + j * \left( x_{ 2 } * y_{ 1 } - x_{ 1 } * y_{ 2 } \right) }{ x_{ 2 }^{ 2 } + y_{ 2 }^{ 2 }}
+			https://www.zahlen-kern.de/editor/equations/dgy1.png
+			\frac{ z_{ 1 } }{ z_{ 2 } } = \frac{ z_{ 1 } * z_{ 2 }^\star}{ z_{ 2 } * z_{ 2 }^\star} = \frac{ x_{ 1 } * x_{ 2 } + y_{ 1 } * y_{ 2 } }{ x_{ 2 }^{ 2 } + y_{ 2 }^{ 2 } } + j * \frac{ x_{ 2 } * y_{ 1 } - x_{ 1 } * y_{ 2 } }{ x_{ 2 }^{ 2 } + y_{ 2 }^{ 2 } }
+			https://www.zahlen-kern.de/editor/equations/dgy2.png
+
+

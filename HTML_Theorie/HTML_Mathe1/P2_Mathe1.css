@@ -1,13 +1,14 @@
 h1 {
 	font-size: 200%;
-	color: blue;
+	color: black;
 	font: arial;
 }
 
 h2 {
 	font-size: 150%;
-	color: gray;
+	color: black;
 	font: arial;
+	text-decoration: underline
 }
 
 h3 {
