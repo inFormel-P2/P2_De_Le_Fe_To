@@ -11,8 +11,14 @@ h2 {
 }
 
 h3 {
-	font-size: 100%;
+	font-size: 120%;
 	color: #6FBECC;
+	font: arial;
+}
+
+h4 {
+	font-size: 100%;
+	color: green;
 	font: arial;
 }
 
