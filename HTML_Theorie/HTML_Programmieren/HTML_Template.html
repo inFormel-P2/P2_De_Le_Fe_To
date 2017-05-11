@@ -58,13 +58,17 @@
 				<tr>
 					<td>
 						<blockquote>
-							<p>Text</p>
+                                                    <p>Für Zeichen wird der Datentyp <b>char</b> verwendet.<br>
+                                                        Dieser kann Umlaute, wie auch europäische und asiatische Zeichen umwandeln.<br><br>
+                                                        <i>char umlaut = 'Ü';<br>
+                                                        System.out.println("Der Buchstabe U und E ergibt:");<br>
+                                                        System.out.println(umlaut);</i><br><br>
+                                                        Der Wertebereich von char: 0 ... 65.535 (z. B. 'A').
+                                                        
+                                                    </p>
 						</blockquote>
 					</td>
-					<td>
-						<blockquote>
-							<p>Bild</p>
-						</blockquote></td>
+					
 				</tr>
 			</table>  
                 <h4>2.2.2 Ganze Zahlen</h4>	
@@ -72,13 +76,35 @@
 				<tr>
 					<td>
 						<blockquote>
-							<p>Text</p>
+                                                    <p>Bei den ganzen Zahlen gibt es vier Datentypen:<br><br>
+                                                        <b>byte</b> ist der kleinste nummerische Datentyp in Java.<br>
+                                                        byte werden zumeist im Zusammenhang mit Feldern genutzt.<br><br>
+                                                        Der Wertebereich von byte: -128 ... 127.<br><br><br>
+                                                        
+                                                        Mit <b>short</b> werden oft Konstanten angelegt,<br>
+                                                        Jedoch wird der Datentyp nur selten gebraucht.<br><br>
+                                                        Der Wertebereich von short: -32.768 ... 32.767.<br><br><br>
+                                                            
+                                                        <b>int</b> bzw. <b>integer</b> ist der am häufigst genutze Datentyp.<br><br>
+                                                        <i>int a = 1;<br>
+                                                            int b = 1;<br>
+                                                            int c = a + b;<br>
+                                                        System.out.println("a mit dem Wert " + a + " plus B mit dem Wert " + b + " ergibt: C " + c);
+                                                        </i><br><br>
+                                                        
+                                                        Der Wertebereich von int: -2.147.483.648 ... 2.147.483.647.<br><br><br>
+                                                        
+                                                        Der Datentyp <b>long</b> ist eine Erweiterung des Typs int, hat jedoch im Gegesatz dazu 8bytes an Görße, anstatt 4bytes.<br><br>
+                                                         Der Wertebereich von long: -2^63 bis 2^63-1, ab Java 8 auch 0 bis 2^64-1.
+                                                         
+                                                        
+                                                        
+                                                        </p>
 						</blockquote>
 					</td>
-					<td>
-						<blockquote>
-							<p>Bild</p>
-						</blockquote></td>
+                                        
+                                        
+					
 				</tr>
 			</table>  
                 <h4>2.2.3 Kommazahlen</h4>	
@@ -86,13 +112,32 @@
 				<tr>
 					<td>
 						<blockquote>
-							<p>Text</p>
+                                                    <p>Bei den Kommazahlen gibt es zwei Datentypen:<br><br>
+                                                        <b>float</b> speichert Gleitkommazahlen in einer Größe von 4byte.<br>
+                                                        Die Genauigkeit liegt bei 7 signifikanten Stellen.<br><br>
+                                                        Der Wertebereich von float: +/-1,4E-45 ... +/-3,4E+38.<br><br><br>
+                                                        
+                                                        <b>double</b> hat Gleitkommavariablen mit einer Größe von 8 Byte. Die Genauigkeit liegt bei 15 signifikanten Stellen.<br><br>
+                                                        
+                                                        <i>
+                                                            double a = 1.00; <br>
+                                                            double b = 3.00; <br>
+                                                            double c = a/b;<br>
+                                                            double d = c * b; // sollte a ergeben <br>
+                                                            System.out.println(a + "/" + b + " = " + c);<br>
+                                                            System.out.println(c + "*" + b + " = " + d + " ( " + a + ")");
+                                                            <br><br>
+                                                            Ausgabe:
+                                                            <br><br>
+                                                            1.0/3.0 = 0.3333333333333333<br>
+                                                            0.3333333333333333*3.0 = 1.0 ( 1.0)<br>
+                                                        </i>
+                                                        <br>
+                                                        Der Wertebereich von double: +/-4,9E-324 ... +/-1,7E+308.
+                                                        </p>
 						</blockquote>
 					</td>
-					<td>
-						<blockquote>
-							<p>Bild</p>
-						</blockquote></td>
+					
 				</tr>
 			</table>  
                 <h4>2.2.4 Boolscher Typ</h4>	
@@ -100,13 +145,21 @@
 				<tr>
 					<td>
 						<blockquote>
-							<p>Text</p>
+                                                    <p>Eine boolesche Variable <b>boolean</b> kann einen von zwei Zuständen annehmen: true oder false. <br>
+                                                        Dies repräsentiert in Ausdrücken zumeist eine Bedingung ist erfüllt – oder eben nicht.<br>
+                                                        Boolsche Variablen werden zumeist im Zusammenhang mit Verzweigungen gebraucht.<br><br>
+                                                        <i>
+                                                            boolean istWahr = true;<br>
+                                                            <br>
+                                                            if (istWahr) {<br>
+                                                            // Mach irgendwas<br>
+                                                            }<br>
+                                                            
+                                                        </i>
+                                                    </p>
 						</blockquote>
 					</td>
-					<td>
-						<blockquote>
-							<p>Bild</p>
-						</blockquote></td>
+				
 				</tr>
 			</table> 
                 
