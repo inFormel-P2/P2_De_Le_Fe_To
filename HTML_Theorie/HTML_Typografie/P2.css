@@ -1,0 +1,51 @@
+
+
+
+        <!DOCTYPE html>
+	<head>
+		<title>Stylesheet</title>
+		<meta charset="UTF-8">
+		<style type="text/css">
+
+		@font-face {
+	    font-family: 'Verdana';
+	    font-weight: 400;
+   		src: url('Verdana.ttf') format('ttf');
+		}
+
+		@font-face{
+    	font-family: 'Source Sans Pro';
+    	font-weight: 700;
+        src: url('Verdana Bold.ttf') format('ttf')
+    	}
+
+    	* { xborder: 0.5px solid red; }
+
+		body { 
+			font-family: 'Verdana', Arial, sans-serif;
+			font-weight: 400;
+			font-feature-settings: "ss03" 1;
+			margin: 5em; 
+			font-size: 100%; 
+		}
+
+		h1 { 
+			margin: 0;
+	        hyphens: auto;
+			margin-bottom: 3em;
+		}
+
+		h2 { font-size: 2.0em; 
+			font-weight: bold; 
+			margin: 0 0 2em 0; 
+
+		}
+
+		h3 { font-size: 1.5em; 
+			font-weight: bold; 
+			margin: 0 0 0.5em 0;
+			border-top: 0.5px solid black;
+			padding-top: 0.5em;
+		}
+
+		</style>
