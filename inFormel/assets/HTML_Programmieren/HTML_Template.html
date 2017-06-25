@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="de">
+    <head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="/../P2.css" type="text/css">		
+    </head>
+    <body>
+		<h1>Programmieren</h1>
+		<h2>1. Objekte und Klassen</h2>
+		
+			<table>
+				<tr>
+					<td>
+						<blockquote>
+                                                    <p>Objekte können klassifiziert werden, als "Objekte einer bestimmten Art", wobei die Klasse die Art darstellt.<br>
+                                                      Klassen repräsentieren das generelle Konzept eines Gegenstands, wobei Objekte, konkrete Instanzen einer Klasse sind.<br>
+                                                      Jede Klasse kann beliebig viele Instanzen erzeugen.
+                                                      
+                                                      Ein Beispiel um den Unterschied zwischen Klassen und Objekten anschaulich zu machen:<br>
+                                                      Wir brauchen für ein Programm den Begriff "Hose". Wenn wir fragen zu dem Begriff stellen wie, welche Farbe hat die Hose, können wir das aktuell nicht beantworten.<br>
+                                                      Das liegt daran, dass Hose momentan nur eine Klasse ist. Stellt man die Frage, welche Farbe hat die Hose des Nebensitzers, <br>geht man speziell auf ein Objekt ein.
+                                                      Somit ist in diesem Kontext "Hose" die Klasse und "Hose des Nebensitzers" eine Instanz der Klasse Hose.
+                                                    </p>
+						</blockquote>
+					</td>
+					<td>
+						<blockquote>
+							<img src="Objekt_Klasse.png" alt="Objekt_Klasse">
+						</blockquote></td>
+				</tr>
+			</table>
+			
+
+		
+		
+		<h2>2. Klassendefinitionen</h2>
+		
+		<h3>2.1 Datenfelder</h3>
+			<table>
+				<tr>
+					<td>
+						<blockquote>
+                                                    <p>Datenfelder finden wir im Kopf der Klasse, diese speichern die Daten die das jeweilige Objekt benutzt.<br>
+                                                        Datenfelder speichern Daten dauerhaft in einem Objekt. Rechts sehen wir wie Datenfelder im Kopf der Klasse deklariert werden.<br>
+                                                    </p>
+						</blockquote>
+					</td>
+					<td>
+						<blockquote>
+							<img src="Datenfeld.png" alt="Datenfeld">
+						</blockquote></td>
+				</tr>
+			</table>
+		
+                <h3>2.2 Datentypen</h3>
+                <h4>2.2.1 Zeichen</h4>	
+                <table>
+				<tr>
+					<td>
+						<blockquote>
+                                                    <p>Für Zeichen wird der Datentyp <b>char</b> verwendet.<br>
+                                                        Dieser kann Umlaute, wie auch europäische und asiatische Zeichen umwandeln.<br><br>
+                                                        <i>char umlaut = 'Ü';<br>
+                                                        System.out.println("Der Buchstabe U und E ergibt:");<br>
+                                                        System.out.println(umlaut);</i><br><br>
+                                                        Der Wertebereich von char: 0 ... 65.535 (z. B. 'A').
+                                                        
+                                                    </p>
+						</blockquote>
+					</td>
+					
+				</tr>
+			</table>  
+                <h4>2.2.2 Ganze Zahlen</h4>	
+                <table>
+				<tr>
+					<td>
+						<blockquote>
+                                                    <p>Bei den ganzen Zahlen gibt es vier Datentypen:<br><br>
+                                                        <b>byte</b> ist der kleinste nummerische Datentyp in Java.<br>
+                                                        byte werden zumeist im Zusammenhang mit Feldern genutzt.<br><br>
+                                                        Der Wertebereich von byte: -128 ... 127.<br><br><br>
+                                                        
+                                                        Mit <b>short</b> werden oft Konstanten angelegt,<br>
+                                                        Jedoch wird der Datentyp nur selten gebraucht.<br><br>
+                                                        Der Wertebereich von short: -32.768 ... 32.767.<br><br><br>
+                                                            
+                                                        <b>int</b> bzw. <b>integer</b> ist der am häufigst genutze Datentyp.<br><br>
+                                                        <i>int a = 1;<br>
+                                                            int b = 1;<br>
+                                                            int c = a + b;<br>
+                                                        System.out.println("a mit dem Wert " + a + " plus B mit dem Wert " + b + " ergibt: C " + c);
+                                                        </i><br><br>
+                                                        
+                                                        Der Wertebereich von int: -2.147.483.648 ... 2.147.483.647.<br><br><br>
+                                                        
+                                                        Der Datentyp <b>long</b> ist eine Erweiterung des Typs int, hat jedoch im Gegesatz dazu 8bytes an Görße, anstatt 4bytes.<br><br>
+                                                         Der Wertebereich von long: -2^63 bis 2^63-1, ab Java 8 auch 0 bis 2^64-1.
+                                                         
+                                                        
+                                                        
+                                                        </p>
+						</blockquote>
+					</td>
+                                        
+                                        
+					
+				</tr>
+			</table>  
+                <h4>2.2.3 Kommazahlen</h4>	
+                <table>
+				<tr>
+					<td>
+						<blockquote>
+                                                    <p>Bei den Kommazahlen gibt es zwei Datentypen:<br><br>
+                                                        <b>float</b> speichert Gleitkommazahlen in einer Größe von 4byte.<br>
+                                                        Die Genauigkeit liegt bei 7 signifikanten Stellen.<br><br>
+                                                        Der Wertebereich von float: +/-1,4E-45 ... +/-3,4E+38.<br><br><br>
+                                                        
+                                                        <b>double</b> hat Gleitkommavariablen mit einer Größe von 8 Byte. Die Genauigkeit liegt bei 15 signifikanten Stellen.<br><br>
+                                                        
+                                                        <i>
+                                                            double a = 1.00; <br>
+                                                            double b = 3.00; <br>
+                                                            double c = a/b;<br>
+                                                            double d = c * b; // sollte a ergeben <br>
+                                                            System.out.println(a + "/" + b + " = " + c);<br>
+                                                            System.out.println(c + "*" + b + " = " + d + " ( " + a + ")");
+                                                            <br><br>
+                                                            Ausgabe:
+                                                            <br><br>
+                                                            1.0/3.0 = 0.3333333333333333<br>
+                                                            0.3333333333333333*3.0 = 1.0 ( 1.0)<br>
+                                                        </i>
+                                                        <br>
+                                                        Der Wertebereich von double: +/-4,9E-324 ... +/-1,7E+308.
+                                                        </p>
+						</blockquote>
+					</td>
+					
+				</tr>
+			</table>  
+                <h4>2.2.4 Boolscher Typ</h4>	
+                <table>
+				<tr>
+					<td>
+						<blockquote>
+                                                    <p>Eine boolesche Variable <b>boolean</b> kann einen von zwei Zuständen annehmen: true oder false. <br>
+                                                        Dies repräsentiert in Ausdrücken zumeist eine Bedingung ist erfüllt – oder eben nicht.<br>
+                                                        Boolsche Variablen werden zumeist im Zusammenhang mit Verzweigungen gebraucht.<br><br>
+                                                        <i>
+                                                            boolean istWahr = true;<br>
+                                                            <br>
+                                                            if (istWahr) {<br>
+                                                            // Mach irgendwas<br>
+                                                            }<br>
+                                                            
+                                                        </i>
+                                                    </p>
+						</blockquote>
+					</td>
+				
+				</tr>
+			</table> 
+                
+                <h3>2.3 Konstruktor</h3>
+			<table>
+				<tr>
+					<td>
+						<blockquote>
+							<p>Der Konstruktor ist eine Methode, die bei Instanzierung (new) einer Klasse aufgerufen wird. Er trägt den Namen der Klasse.<br> Der Konstruktor hat keinerlei Rückgabetyp, nicht einmal void. Die Aufgabe des Konstruktors ist es, ein Objekt zu initialisieren.<br><br>
+
+							Der Standardkonstruktor hat keine Parameter. Im Konstruktor findet die Initialisierung statt, also alle die Vorgänge, <br>die genau einmal zu Start erledigt werden sollten, bevor die Variable benutzt wird. Da die Variable sich quasi <br>selbst vorbereitet, werden Initialisierungsfehler vermieden und der Code wird stabiler.<br><br>
+
+							Ein Konstruktor trägt den Namen der Klasse und hat keinen Rückgabewert. Der Standarkonstruktor hat keine Parameter.<br> Es kann weitere (überladene) Konstruktoren mit Parametern geben.</p>
+						</blockquote>
+					</td>
+					<td>
+						<blockquote>
+							<p><img src="Konstruktor.png" alt="Konstruktor"></p>
+						</blockquote></td>
+				</tr>
+			</table>
+                
+                <h3>2.4 Methoden</h3>
+			<table>
+				<tr>
+					<td>
+						<blockquote>
+							<p>Die Methode ist ein Bestandteil einer Klasse und kann auch nur in einer Klasse deklariert und implementiert werden.<br> Methoden sind Interaktionsmittel von Objekten. Es gibt Methoden mit einem oder keinem Rückgabewert, d.h. es ist <br>nicht möglich einer Methode mehr als einen Rückgabewert zuzuordnen. Der Rückgabewert einer Methode kann allerdings einen beliebigen Datentyp annehmen, so dass man gegebenenfalls auch Arrays oder Objekte als Rückgabewert benutzen kann. Einer Methode können jedoch beliebig viele Parameter übergeben werden.</p>
+						</blockquote>
+					</td>
+					<td>
+						<blockquote>
+							<p><img src="Methode.png" alt="Methode"></p>
+						</blockquote></td>
+				</tr>
+			</table>
+			
+			
+		<h2>3. Schleifen</h2>
+		<table>
+				<tr>
+					<td>
+						<blockquote>
+							<p>Auf Schleifen greift man in der Programmierung dann zurück, wenn eine bestimmte Anweisungen oder Operationen <br>beliebig oft wiederholt werden sollen. In Java gibt es drei relevante Schleifen-Typen. Je nach Einsatzszenario <br>entscheidet man sich für eine der drei Schleifen:<br><br>
+
+    						for-Schleife<br>
+    						while-Schleife<br>
+    						do-While-Schleife<br><br>
+
+							Nachfolgend werden die einzelnen Schleifen-Varianten vorgestellt.</p>
+						</blockquote>
+					</td>
+					
+				</tr>
+			</table>
+		<h3>3.1 for-Schleife</h3>
+			<table>
+				<tr>
+					<td>
+						<blockquote>
+							<p>Die For-Schleife nimmt man immer dann, wenn man die Anzahl der benötigten Schleifen-Durchläufe schon im Voraus kennt.<br> Für die Vorschleife werden die folgenden drei Parameter benötigt:<br><br>
+
+    						Initialisierung<br>
+    						Zielwert<br>
+    						Schrittweite<br><br>
+
+							Mit der Initialisierung legt man fest, ab welchen Wert man mit der Schleife startet. Die Schleife wird dann so lange <br>durchgeführt, bis der Zielwert erreicht oder überschritten wird. Wie schnell das geht, dass legt man mit der Schrittweite fest. Auf der rechten Seite sieht man die Syntax der for-Schleife.
+							<br><br><br><br><br>
+							
+
+							Auf der rechten Seite eine konkrete Schleife die "Hello World" genau 10 mal ausgibt. Man überlegt sich als Startwert <br>gewöhnlicherweise die 0 oder die 1 in solch einem Fall (hier die 0). Soll "Hello World!" genau 10 mal ausgegben werden,<br><br> dann muss die Schleife 10 mal ausgeführt werden. Startet man nun mit einem Startwert bei der Initialisierung <br>von 0, dann ist der Zielwert <10. Die Schrittweise ist natürlich immer +1 also ++. Auf der rechten Seite nun die <br>komplette for-Schleife.
+							</p>
+						</blockquote>
+					</td>
+					<td>
+						<blockquote><br><br> <br><br><br>
+							<p><img src="for_leer.png" alt="for_leer"></p><br><br><br><br><br>
+							<p><img src="for.png" alt="for"></p>
+						</blockquote></td>
+						
+						</blockquote>
+					</td>
+				</tr>
+			</table>
+		<h3>3.2 while-Schleife</h3>
+			<table>
+				<tr>
+					<td>
+						<blockquote>
+							<p>Die While-Schleife wird so lange durchlaufen, bis die Bedingung ein False ergibt. Dabei steht die Bedingung am <br>Anfang, ist sie also schon davor „falsch“, dann wird die Schleife kein einziges Mal ausgeführt, sondern übersprungen.<br>Die Syntax für ene While-Schleife befindet sich auf der rechten Seite<br>
+							<br><br><br><br><br>
+							
+
+							Die While-Schleife auf der rechten Seite wird beispielsweise nur einmal ausgeführt, da sich beim ersten Durchlauf die Bedingung <br>erfüllt, in dem die Variable "var" auf "false" gesetzt wird:<br><br>
+
+							</p>
+						</blockquote>
+					</td>
+					<td>
+						<blockquote><br>
+							<p><img src="while_leer.png" alt="while_leer"></p><br>
+							<p><img src="while.png" alt="while"></p>
+						</blockquote></td>
+						
+						</blockquote>
+					</td>
+				</tr>
+			</table>
+
+			<h3>3.3 do-while-Schleife</h3>
+			<table>
+				<tr>
+					<td>
+						<blockquote>
+							<p>Wenn man weiß, dass die Schleife auf jeden Fall mindestens einmal ausgeführt werden soll, dann kann man statt einer <br>While-Schleife auch eine Do-While-Schleife einsetzen. Eine Do-While-Schleife ist im Grunde genommen nichts anderes, <br>als eine While-Schleife bei der die Schleifen-Bedingung am Ende der Schleife und nicht am Anfang steht.
+								<br><br><br><br><br>
+
+							Damit wird unser nachfolgendes Code-Stück, obwohl die Variable var schon von Anfang an mit false initialisiert wurde, <br>dennoch einmal die Meldung "Hello World" wie bei der While-Schleife ausgeben:</p>
+						</blockquote>
+					</td>
+					<td>
+						<blockquote><br><br>
+							<p><img src="do_leer.png" alt="do_leer"></p><br>
+							<p><img src="do.png" alt="do"></p>
+						</blockquote></td>
+				</tr>
+			</table>
+                
+                <h2>4. if-Abfragen</h2>
+		
+			<table>
+				<tr>
+					<td>
+						<blockquote>
+							<p>Die If-Anweisung dient dazu einen Ausdruck auszuwerten und je nach Ergebnis weiterzuverfahren. <br>Der Ausdruck muss dabei einen Wert vom Datentyp boolean haben.<br> Um If-Anweisungen wird man im kaum einen Programm herumkommen.<br> Das simple Konzept ist sehr mächtig und kann in den unterschiedlichsten Situationen eingesetzt werden.
+							<br><br><br><br><br>
+							Nun noch ein konkretes Beispiel zu der If-Anweisung. Im nachfolgenden Codestück soll überprüft werden ob die Integer <br>Variable var den Wert 3 besitzt. Gibt diese Anweisung ein true zurück, was im Beispiel der Fall ist, dann wird „Hello <br>World!“ auf dem Bildschirm ausgegeben.<br>
+
+</p>
+						</blockquote>
+					</td>
+					<td>
+						<blockquote>
+							<p><img src="if_leer.png" alt="if_leer"></p><br><br>
+							<p><img src="if.png" alt="if"></p>
+						</blockquote></td>
+				</tr>
+			</table>
+
+            <h3>4.1 if-else-Abfragen</h3>
+			<table>
+				<tr>
+					<td>
+						<blockquote>
+							<p>Nun kann es sein, dass falls die Anweisung in der If-Bedinung nicht ein „wahr“ ergibt, man dennoch entsprechend <br>verfahren möchte. Deshalb gibt es das If-Else-Konstrukt. Gibt die if-Bedingung ein false (also nicht wahr) zurück, <br>dann werden anstatt der Befehle die in den Klammern hinter der if-Bedinung stehen die Befehle die nach else kommen <br>ausgeführt. Man könnte das Konstrukt mit entweder-oder übersetzen. Entweder die If-Bedingung stimmt und ich mache <br>folgendes oder die if-Bedingung stimmt nicht und ich mache das andere hinter else.<br> Nie werden aber beide Befehle die in von If und von Else umfasst werden ausgeführt.
+								<br><br><br><br><br>
+
+							Mit if-else Anweisungen kann man seinen Code weiter verzweigen, in dem man einfach mehrere <br>if-elsen-Anweisungen nacheinander schreibt.</p>
+						</blockquote>
+					</td>
+					<td>
+						<blockquote><br><br>
+							<p><img src="ifelse_leer.png" alt="ifelse_leer"></p><br>
+							<p><img src="ifelse.png" alt="ifelse"></p>
+						</blockquote></td>
+				</tr>
+			</table>
+                <h2>5. Array</h2>
+
+			<table>
+				<tr>
+					<td>
+						<blockquote>
+							<p>Unter einem Array in Java versteht man ein Feld oder Container, das in der Lage ist, mehrere Objekte vom gleichen <br>Typ aufzunehmen und zu verwalten. Dabei wird in Java das Array als eine spezielle Klasse repräsentiert, was unter<br> anderem mit sich bringt, dass man auf spezielle Methoden und Operationen bei Arrays zurückgreifen kann. <br>Der Umgang mit Arrays mag gerade am Anfang etwas schwerer sein und birgt viele Fehlerquellen,<br> nach und nach wird man das System das hinter den Arrays steht aber gut nachvollziehen können. <br><br><br>
+
+							<b>Array deklarieren</b>
+							<br><br>
+							Ein Array kann auf unterschiedlichste Weisen deklariert oder initialisiert werden.<br> Wichtig ist immer, dass man dabei an die eckigen Klammeroperatoren denkt, <br>da diese ein Array auszeichnen. Anbei die Syntax für die Deklaration eines Arrays:<br><br>
+
+							<i>
+							Typ[] Name = new Typ[Anzahl];<br>
+							Typ Name[] = new Typ[Anzahl];<br>
+							</i>
+							<br>
+							Möchte man nun also ein Array das insgesamt 5-int Werte verwaltet, dann lautet die Deklaration des Arrays:<br><br>
+
+							<i>
+							int[] meinArray = new int[5];
+							</i>
+							<br><br><br>
+							<b>Array initialisieren</b>
+							<br><br>
+							Möchte man das Array nun gleich auch noch mit den Zahlen von 1 bis 5 initialisieren, dann geht das so:
+							<br><br>
+							<i>
+							int[] meinArray = {1,2,3,4,5};
+							</i>
+							<br><br><br>
+							<b>Zugriff auf Array-Felder</b>
+							<br><br>
+							Aber Achtung! Beim Zugriff auf ein Array-Feld muss man nun darauf achten, dass bei einem Array ab der 0 angefangen wird.<br> Bei unserem Beispiel-5er-Array sind also die Felder 0-4 belegt. Möchte man nun beispielsweise auf das erste <br>Element zugreifen und ausgeben (in unserem Beispiel die 1), dann würde das folgendermaßen gehen:
+							<br><br>
+							<i>
+							int[] meinArray = {1,2,3,4,5};<br>
+							System.out.println(meinArray[0]);<br>
+						    </i><br><br>
+							Etwas erfahrenere Programmierer werden jetzt schon erkennen, worauf es beim Zugriff auf Elemente im Array meist <br>hinausläuft: Auf Schleifen!<br>
+							Schleifen sind ein komfortables Mittel um alle Elemente eines Arrays durchzugehen und auf Wunsch auszugeben oder andere <br>Operationen darauf anzuwenden. Allerdings muss man nicht nur hier aufpassen, dass man die länge des Arrays in der <br>Schleife nicht überschreitet und so auf Felder zugreift die gar nicht existieren. Damit so etwas erst gar nicht<br> passiert, kann man in der Abbruchbedingung der for-Schleife direkt die Länge des Arrays ausgeben mit: array.length.
+							<br><br>
+							Möchte man nun also alle 5 Elemente unseres Beispiels-Arrays mit einer Schleife ausgeben lassen, dann würde das so gehen:<br>
+							<br>
+							<i>
+							int[] meinArray = {1,2,3,4,5};<br>
+							for(int i=0; i‹meinArray.length; i++) {<br>
+								System.out.println(meinArray[i]);<br>
+							}<br>
+							</i>
+
+							</p>
+						</blockquote>
+					</td>
+					
+				</tr>
+			</table>
+		
+		
+    </body>
+</html>
