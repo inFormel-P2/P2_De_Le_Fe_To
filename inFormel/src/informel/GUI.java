@@ -5,6 +5,10 @@
  */
 package informel;
 
+import javax.swing.JFileChooser;
+import java.io.File;
+import java.awt.CardLayout;
+
 /**
  *
  * @author denisehfg
@@ -50,6 +54,8 @@ public class GUI extends javax.swing.JFrame {
         jButton19 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jEditorPane1 = new javax.swing.JEditorPane();
+        jButton13 = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new java.awt.CardLayout());
@@ -119,7 +125,7 @@ public class GUI extends javax.swing.JFrame {
                     .addGroup(HauptscreenLayout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton3)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(112, 112, 112)
                 .addComponent(jButton1)
                 .addGroup(HauptscreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(HauptscreenLayout.createSequentialGroup()
@@ -128,7 +134,7 @@ public class GUI extends javax.swing.JFrame {
                     .addGroup(HauptscreenLayout.createSequentialGroup()
                         .addGap(98, 98, 98)
                         .addComponent(jButton4)))
-                .addContainerGap(82, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         HauptscreenLayout.setVerticalGroup(
             HauptscreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -147,7 +153,7 @@ public class GUI extends javax.swing.JFrame {
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, HauptscreenLayout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jButton4)))))
-                .addContainerGap(66, Short.MAX_VALUE))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
 
         getContentPane().add(Hauptscreen, "card2");
@@ -224,7 +230,7 @@ public class GUI extends javax.swing.JFrame {
         ProgrammierenLayout.setHorizontalGroup(
             ProgrammierenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ProgrammierenLayout.createSequentialGroup()
-                .addContainerGap(89, Short.MAX_VALUE)
+                .addContainerGap(292, Short.MAX_VALUE)
                 .addGroup(ProgrammierenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ProgrammierenLayout.createSequentialGroup()
                         .addGroup(ProgrammierenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -249,7 +255,7 @@ public class GUI extends javax.swing.JFrame {
             ProgrammierenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ProgrammierenLayout.createSequentialGroup()
                 .addComponent(jButton12)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 85, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
                 .addGroup(ProgrammierenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(ProgrammierenLayout.createSequentialGroup()
                         .addComponent(jButton11)
@@ -285,13 +291,25 @@ public class GUI extends javax.swing.JFrame {
 
         jScrollPane1.setViewportView(jEditorPane1);
 
+        jButton13.setText("jButton13");
+        jButton13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton13MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout ArraysLayout = new javax.swing.GroupLayout(Arrays);
         Arrays.setLayout(ArraysLayout);
         ArraysLayout.setHorizontalGroup(
             ArraysLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ArraysLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jButton16)
+                .addGroup(ArraysLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(ArraysLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jButton16))
+                    .addGroup(ArraysLayout.createSequentialGroup()
+                        .addGap(16, 16, 16)
+                        .addComponent(jButton13)))
                 .addGroup(ArraysLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(ArraysLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -300,24 +318,38 @@ public class GUI extends javax.swing.JFrame {
                     .addGroup(ArraysLayout.createSequentialGroup()
                         .addGap(43, 43, 43)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(131, Short.MAX_VALUE))))
+                        .addContainerGap(140, Short.MAX_VALUE))))
         );
         ArraysLayout.setVerticalGroup(
             ArraysLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ArraysLayout.createSequentialGroup()
-                .addGroup(ArraysLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(ArraysLayout.createSequentialGroup()
-                        .addGroup(ArraysLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton19)
-                            .addGroup(ArraysLayout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(jButton16)))
-                        .addGap(0, 308, Short.MAX_VALUE))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addComponent(jScrollPane1)
                 .addContainerGap())
+            .addGroup(ArraysLayout.createSequentialGroup()
+                .addGroup(ArraysLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton19)
+                    .addGroup(ArraysLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jButton16)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 214, Short.MAX_VALUE)
+                .addComponent(jButton13)
+                .addGap(34, 34, 34))
         );
 
         getContentPane().add(Arrays, "card4");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 802, Short.MAX_VALUE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 406, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(jPanel1, "card5");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -345,7 +377,9 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton4MouseClicked
 
     private void jButton12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton12MouseClicked
-       Hauptscreen.setVisible(true);
+        CardLayout cl = (CardLayout)(jFrame.getLayout());
+
+        card2.setVisible(true);
         Programmieren.setVisible(false);
         Arrays.setVisible(false);
     }//GEN-LAST:event_jButton12MouseClicked
@@ -364,6 +398,25 @@ public class GUI extends javax.swing.JFrame {
         Arrays.setVisible(true);
     }//GEN-LAST:event_jButton9MouseClicked
 
+    private void jButton13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton13MouseClicked
+        /*JFileChooser fc = new JFileChooser();
+        int result = fc.showOpenDialog(this);
+        if (result == JFileChooser.APPROVE_OPTION) {
+            System.out.println("Lade " + fc.getSelectedFile());*/
+ 
+
+
+            //System.out.println(fc.getSelectedFile().toURI());
+            //WebWindow www = new WebWindow(fc.getSelectedFile().toURI());
+            //WebWindow www = new WebWindow (file:/Users/denisehfg/Documents/Semester%202/Programmieren%202/inFormel/P2_De_Le_Fe_To/HTML_Theorie/HTML_Programmieren/HTML_Template.html);
+            
+            WebWindow www = new WebWindow(new File("/Users/denisehfg/Documents/Semester 2/Programmieren 2/inFormel/P2_De_Le_Fe_To/HTML_Theorie/HTML_Programmieren/HTML_Template.html").toURI());
+            www.setSize(400, 600);
+            www.setLocationRelativeTo(this);
+            www.setVisible(true);
+        //}
+    }//GEN-LAST:event_jButton13MouseClicked
+    
     /**
      * @param args the command line arguments
      */
@@ -407,6 +460,7 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
+    private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton19;
     private javax.swing.JButton jButton2;
@@ -418,6 +472,7 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JEditorPane jEditorPane1;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 
