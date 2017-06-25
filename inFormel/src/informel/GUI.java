@@ -16,8 +16,12 @@ public class GUI extends javax.swing.JFrame {
      */
     public GUI() {
         initComponents();
+        
     }
 
+    void showCard(String cardName) {
+      ((java.awt.CardLayout)getContentPane().getLayout()).show(getContentPane(), cardName);
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -41,8 +45,14 @@ public class GUI extends javax.swing.JFrame {
         jButton10 = new javax.swing.JButton();
         jButton11 = new javax.swing.JButton();
         jButton12 = new javax.swing.JButton();
+        Arrays = new javax.swing.JPanel();
+        jButton16 = new javax.swing.JButton();
+        jButton19 = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jEditorPane1 = new javax.swing.JEditorPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new java.awt.CardLayout());
 
         Hauptscreen.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -140,6 +150,8 @@ public class GUI extends javax.swing.JFrame {
                 .addContainerGap(66, Short.MAX_VALUE))
         );
 
+        getContentPane().add(Hauptscreen, "card2");
+
         Programmieren.setBackground(new java.awt.Color(255, 255, 255));
 
         jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle_Prog.png"))); // NOI18N
@@ -148,6 +160,11 @@ public class GUI extends javax.swing.JFrame {
         jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton6.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
         jButton6.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
 
         jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Programmieren/Circle_Klassendef.png"))); // NOI18N
         jButton7.setBorderPainted(false);
@@ -176,6 +193,11 @@ public class GUI extends javax.swing.JFrame {
         jButton9.setContentAreaFilled(false);
         jButton9.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
         jButton9.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
+        jButton9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton9MouseClicked(evt);
+            }
+        });
 
         jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Programmieren/Circle_ObjundKla.png"))); // NOI18N
         jButton10.setBorderPainted(false);
@@ -244,21 +266,58 @@ public class GUI extends javax.swing.JFrame {
                 .addGap(60, 60, 60))
         );
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Hauptscreen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(Programmieren, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        getContentPane().add(Programmieren, "card3");
+
+        Arrays.setBackground(new java.awt.Color(255, 255, 255));
+
+        jButton16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Programmieren/Circle_Array.png"))); // NOI18N
+        jButton16.setBorderPainted(false);
+        jButton16.setContentAreaFilled(false);
+        jButton16.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
+        jButton16.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
+
+        jButton19.setText("Zurück");
+        jButton19.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton19MouseClicked(evt);
+            }
+        });
+
+        jScrollPane1.setViewportView(jEditorPane1);
+
+        javax.swing.GroupLayout ArraysLayout = new javax.swing.GroupLayout(Arrays);
+        Arrays.setLayout(ArraysLayout);
+        ArraysLayout.setHorizontalGroup(
+            ArraysLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ArraysLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jButton16)
+                .addGroup(ArraysLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(ArraysLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton19)
+                        .addContainerGap())
+                    .addGroup(ArraysLayout.createSequentialGroup()
+                        .addGap(43, 43, 43)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(131, Short.MAX_VALUE))))
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(Hauptscreen, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Programmieren, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        ArraysLayout.setVerticalGroup(
+            ArraysLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ArraysLayout.createSequentialGroup()
+                .addGroup(ArraysLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(ArraysLayout.createSequentialGroup()
+                        .addGroup(ArraysLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton19)
+                            .addGroup(ArraysLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jButton16)))
+                        .addGap(0, 308, Short.MAX_VALUE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addContainerGap())
         );
+
+        getContentPane().add(Arrays, "card4");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -282,12 +341,28 @@ public class GUI extends javax.swing.JFrame {
     private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
         Hauptscreen.setVisible(false);
         Programmieren.setVisible(true);
+        Arrays.setVisible(false);
     }//GEN-LAST:event_jButton4MouseClicked
 
     private void jButton12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton12MouseClicked
        Hauptscreen.setVisible(true);
         Programmieren.setVisible(false);
+        Arrays.setVisible(false);
     }//GEN-LAST:event_jButton12MouseClicked
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton19MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton19MouseClicked
+
+    private void jButton9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton9MouseClicked
+        Programmieren.setVisible(false);
+        Hauptscreen.setVisible(false);
+        Arrays.setVisible(true);
+    }//GEN-LAST:event_jButton9MouseClicked
 
     /**
      * @param args the command line arguments
@@ -325,12 +400,15 @@ public class GUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel Arrays;
     private javax.swing.JPanel Hauptscreen;
     private javax.swing.JPanel Programmieren;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
+    private javax.swing.JButton jButton16;
+    private javax.swing.JButton jButton19;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
@@ -339,5 +417,8 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
+    private javax.swing.JEditorPane jEditorPane1;
+    private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
+
 }
