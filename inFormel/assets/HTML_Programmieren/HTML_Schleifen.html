@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="de">
+    <head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="/../P2.css" type="text/css">		
+    </head>
+    <body>
+		<h1>Programmieren</h1>						
+		<h2>3. Schleifen</h2>
+		<table>
+				<tr>
+					<td>
+						<blockquote>
+							<p>Auf Schleifen greift man in der Programmierung dann zurück, wenn eine bestimmte Anweisungen oder Operationen <br>beliebig oft wiederholt werden sollen. In Java gibt es drei relevante Schleifen-Typen. Je nach Einsatzszenario <br>entscheidet man sich für eine der drei Schleifen:<br><br>
+
+    						for-Schleife<br>
+    						while-Schleife<br>
+    						do-While-Schleife<br><br>
+
+							Nachfolgend werden die einzelnen Schleifen-Varianten vorgestellt.</p>
+						</blockquote>
+					</td>
+					
+				</tr>
+			</table>
+		<h3>3.1 for-Schleife</h3>
+			<table>
+				<tr>
+					<td>
+						<blockquote>
+							<p>Die For-Schleife nimmt man immer dann, wenn man die Anzahl der benötigten Schleifen-Durchläufe schon im Voraus kennt.<br> Für die Vorschleife werden die folgenden drei Parameter benötigt:<br><br>
+
+    						Initialisierung<br>
+    						Zielwert<br>
+    						Schrittweite<br><br>
+
+							Mit der Initialisierung legt man fest, ab welchen Wert man mit der Schleife startet. Die Schleife wird dann so lange <br>durchgeführt, bis der Zielwert erreicht oder überschritten wird. Wie schnell das geht, dass legt man mit der Schrittweite fest. Auf der rechten Seite sieht man die Syntax der for-Schleife.
+							<br><br><br><br><br>
+							
+
+							Auf der rechten Seite eine konkrete Schleife die "Hello World" genau 10 mal ausgibt. Man überlegt sich als Startwert <br>gewöhnlicherweise die 0 oder die 1 in solch einem Fall (hier die 0). Soll "Hello World!" genau 10 mal ausgegben werden,<br><br> dann muss die Schleife 10 mal ausgeführt werden. Startet man nun mit einem Startwert bei der Initialisierung <br>von 0, dann ist der Zielwert <10. Die Schrittweise ist natürlich immer +1 also ++. Auf der rechten Seite nun die <br>komplette for-Schleife.
+							</p>
+						</blockquote>
+					</td>
+					<td>
+						<blockquote><br><br> <br><br><br>
+							<p><img src="for_leer.png" alt="for_leer"></p><br><br><br><br><br>
+							<p><img src="for.png" alt="for"></p>
+						</blockquote></td>
+						
+						</blockquote>
+					</td>
+				</tr>
+			</table>
+		<h3>3.2 while-Schleife</h3>
+			<table>
+				<tr>
+					<td>
+						<blockquote>
+							<p>Die While-Schleife wird so lange durchlaufen, bis die Bedingung ein False ergibt. Dabei steht die Bedingung am <br>Anfang, ist sie also schon davor „falsch“, dann wird die Schleife kein einziges Mal ausgeführt, sondern übersprungen.<br>Die Syntax für ene While-Schleife befindet sich auf der rechten Seite<br>
+							<br><br><br><br><br>
+							
+
+							Die While-Schleife auf der rechten Seite wird beispielsweise nur einmal ausgeführt, da sich beim ersten Durchlauf die Bedingung <br>erfüllt, in dem die Variable "var" auf "false" gesetzt wird:<br><br>
+
+							</p>
+						</blockquote>
+					</td>
+					<td>
+						<blockquote><br>
+							<p><img src="while_leer.png" alt="while_leer"></p><br>
+							<p><img src="while.png" alt="while"></p>
+						</blockquote></td>
+						
+						</blockquote>
+					</td>
+				</tr>
+			</table>
+
+			<h3>3.3 do-while-Schleife</h3>
+			<table>
+				<tr>
+					<td>
+						<blockquote>
+							<p>Wenn man weiß, dass die Schleife auf jeden Fall mindestens einmal ausgeführt werden soll, dann kann man statt einer <br>While-Schleife auch eine Do-While-Schleife einsetzen. Eine Do-While-Schleife ist im Grunde genommen nichts anderes, <br>als eine While-Schleife bei der die Schleifen-Bedingung am Ende der Schleife und nicht am Anfang steht.
+								<br><br><br><br><br>
+
+							Damit wird unser nachfolgendes Code-Stück, obwohl die Variable var schon von Anfang an mit false initialisiert wurde, <br>dennoch einmal die Meldung "Hello World" wie bei der While-Schleife ausgeben:</p>
+						</blockquote>
+					</td>
+					<td>
+						<blockquote><br><br>
+							<p><img src="do_leer.png" alt="do_leer"></p><br>
+							<p><img src="do.png" alt="do"></p>
+						</blockquote></td>
+				</tr>
+			</table>
+    </body>
+</html>

@@ -246,7 +246,7 @@ public class inFormel_GUI extends javax.swing.JFrame {
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, HauptscreenLayout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jButton8)))))
-                .addContainerGap(285, Short.MAX_VALUE))
+                .addContainerGap(273, Short.MAX_VALUE))
         );
 
         jPanel1.add(Hauptscreen, "mainCard");
@@ -1192,7 +1192,7 @@ public class inFormel_GUI extends javax.swing.JFrame {
        CardLayout card = (CardLayout)jPanel1.getLayout();
         card.show(jPanel1, "arrayCard");
         try {
-            htmlToJavaPanel objArrayPanel = new htmlToJavaPanel(arrayPane, new File("/Users/denisehfg/Documents/Semester 2/Programmieren 2/inFormel/P2_De_Le_Fe_To/HTML_Theorie/HTML_Programmieren/HTML_Template.html").toURI().toURL());
+            htmlToJavaPanel objArrayPanel = new htmlToJavaPanel(arrayPane, new File("/Users/denisehfg/Documents/Semester 2/Programmieren 2/inFormel/P2_De_Le_Fe_To/inFormel/assets/HTML_Programmieren/HTML_Array.html").toURI().toURL());
             objArrayPanel.buildPane();
         } catch (IOException e) {
             System.err.println("Attempted to read a bad URL");
@@ -1224,7 +1224,7 @@ public class inFormel_GUI extends javax.swing.JFrame {
         CardLayout card = (CardLayout)jPanel1.getLayout();
         card.show(jPanel1, "bruchCard");
         try {
-            htmlToJavaPanel objBruchPanel = new htmlToJavaPanel(bruchPane, new File("/Users/denisehfg/Documents/Semester 2/Programmieren 2/inFormel/P2_De_Le_Fe_To/HTML_Theorie/HTML_Basics/Bruchrechnen/HTML_Template.html").toURI().toURL());
+            htmlToJavaPanel objBruchPanel = new htmlToJavaPanel(bruchPane, new File("/Users/denisehfg/Documents/Semester 2/Programmieren 2/inFormel/P2_De_Le_Fe_To/inFormel/assets/HTML_Basics/Bruchrechnen/HTML_Template.html").toURI().toURL());
             objBruchPanel.buildPane();
         } catch (IOException e) {
             System.err.println("Attempted to read a bad URL");
@@ -1239,7 +1239,7 @@ public class inFormel_GUI extends javax.swing.JFrame {
         CardLayout card = (CardLayout)jPanel1.getLayout();
         card.show(jPanel1, "darformCard");
         try {
-            htmlToJavaPanel objdarformPanel = new htmlToJavaPanel(darstellungPane, new File("/Users/denisehfg/Documents/Semester 2/Programmieren 2/inFormel/P2_De_Le_Fe_To/HTML_Theorie/HTML_Mathe1/HTML_Mathe1.html").toURI().toURL());
+            htmlToJavaPanel objdarformPanel = new htmlToJavaPanel(darstellungPane, new File("/Users/denisehfg/Documents/Semester 2/Programmieren 2/inFormel/P2_De_Le_Fe_To/inFormel/assets/HTML_Mathe1/HTML_Darstellungsformen.html").toURI().toURL());
             objdarformPanel.buildPane();
         } catch (IOException e) {
             System.err.println("Attempted to read a bad URL");
@@ -1308,7 +1308,7 @@ public class inFormel_GUI extends javax.swing.JFrame {
         CardLayout card = (CardLayout)jPanel1.getLayout();
         card.show(jPanel1, "typoCard");
           try {
-            htmlToJavaPanel objtypoPanel = new htmlToJavaPanel(typoPane, new File("/Users/denisehfg/Documents/Semester 2/Programmieren 2/inFormel/P2_De_Le_Fe_To/HTML_Theorie/HTML_Typografie/HTML_Template.html").toURI().toURL());
+            htmlToJavaPanel objtypoPanel = new htmlToJavaPanel(typoPane, new File("/Users/denisehfg/Documents/Semester 2/Programmieren 2/inFormel/P2_De_Le_Fe_To/inFormel/assets/HTML_Typografie/HTML_Template.html").toURI().toURL());
             objtypoPanel.buildPane();
         } catch (IOException e) {
             System.err.println("Attempted to read a bad URL");
@@ -1319,7 +1319,7 @@ public class inFormel_GUI extends javax.swing.JFrame {
         CardLayout card = (CardLayout)jPanel1.getLayout();
         card.show(jPanel1, "classdefCard");
         try {
-            htmlToJavaPanel objclassdefPanel = new htmlToJavaPanel(klassdefPane, new File("/Users/denisehfg/Documents/Semester 2/Programmieren 2/inFormel/P2_De_Le_Fe_To/HTML_Theorie/HTML_Programmieren/HTML_Template.html").toURI().toURL());
+            htmlToJavaPanel objclassdefPanel = new htmlToJavaPanel(klassdefPane, new File("/Users/denisehfg/Documents/Semester 2/Programmieren 2/inFormel/P2_De_Le_Fe_To/inFormel/assets/HTML_Programmieren/HTML_Klassendefinitionen.html").toURI().toURL());
             objclassdefPanel.buildPane();
         } catch (IOException e) {
             System.err.println("Attempted to read a bad URL");
@@ -1330,7 +1330,7 @@ public class inFormel_GUI extends javax.swing.JFrame {
         CardLayout card = (CardLayout)jPanel1.getLayout();
         card.show(jPanel1, "ifCard");
         try {
-            htmlToJavaPanel objifPanel = new htmlToJavaPanel(ifPane, new File("/Users/denisehfg/Documents/Semester 2/Programmieren 2/inFormel/P2_De_Le_Fe_To/HTML_Theorie/HTML_Programmieren/HTML_Template.html").toURI().toURL());
+            htmlToJavaPanel objifPanel = new htmlToJavaPanel(ifPane, new File("/Users/denisehfg/Documents/Semester 2/Programmieren 2/inFormel/P2_De_Le_Fe_To/inFormel/assets/HTML_Programmieren/HTML_if.html").toURI().toURL());
             objifPanel.buildPane();
         } catch (IOException e) {
             System.err.println("Attempted to read a bad URL");
@@ -1341,7 +1341,7 @@ public class inFormel_GUI extends javax.swing.JFrame {
         CardLayout card = (CardLayout)jPanel1.getLayout();
         card.show(jPanel1, "schleifenCard");
         try {
-            htmlToJavaPanel objschleifenPanel = new htmlToJavaPanel(schleifenPane, new File("/Users/denisehfg/Documents/Semester 2/Programmieren 2/inFormel/P2_De_Le_Fe_To/HTML_Theorie/HTML_Programmieren/HTML_Template.html").toURI().toURL());
+            htmlToJavaPanel objschleifenPanel = new htmlToJavaPanel(schleifenPane, new File("/Users/denisehfg/Documents/Semester 2/Programmieren 2/inFormel/P2_De_Le_Fe_To/inFormel/assets/HTML_Programmieren/HTML_Schleifen.html").toURI().toURL());
             objschleifenPanel.buildPane();
         } catch (IOException e) {
             System.err.println("Attempted to read a bad URL");
@@ -1352,7 +1352,7 @@ public class inFormel_GUI extends javax.swing.JFrame {
         CardLayout card = (CardLayout)jPanel1.getLayout();
         card.show(jPanel1, "objklaCard");
         try {
-            htmlToJavaPanel objobjklaPanel = new htmlToJavaPanel(objklassPane, new File("/Users/denisehfg/Documents/Semester 2/Programmieren 2/inFormel/P2_De_Le_Fe_To/HTML_Theorie/HTML_Programmieren/HTML_Template.html").toURI().toURL());
+            htmlToJavaPanel objobjklaPanel = new htmlToJavaPanel(objklassPane, new File("/Users/denisehfg/Documents/Semester 2/Programmieren 2/inFormel/P2_De_Le_Fe_To/inFormel/assets/HTML_Programmieren/HTML_ObjekteundKlassen.html").toURI().toURL());
             objobjklaPanel.buildPane();
         } catch (IOException e) {
             System.err.println("Attempted to read a bad URL");
@@ -1363,7 +1363,7 @@ public class inFormel_GUI extends javax.swing.JFrame {
         CardLayout card = (CardLayout)jPanel1.getLayout();
         card.show(jPanel1, "dreieckCard");
           try {
-            htmlToJavaPanel objdreieckePanel = new htmlToJavaPanel(dreieckePane, new File("/Users/denisehfg/Documents/Semester 2/Programmieren 2/inFormel/P2_De_Le_Fe_To/HTML_Theorie/HTML_Basics/Dreiecke/HTML_Template.html").toURI().toURL());
+            htmlToJavaPanel objdreieckePanel = new htmlToJavaPanel(dreieckePane, new File("/Users/denisehfg/Documents/Semester 2/Programmieren 2/inFormel/P2_De_Le_Fe_To/inFormel/assets/HTML_Basics/Dreiecke/HTML_Template.html").toURI().toURL());
             objdreieckePanel.buildPane();
         } catch (IOException e) {
             System.err.println("Attempted to read a bad URL");
@@ -1379,7 +1379,7 @@ public class inFormel_GUI extends javax.swing.JFrame {
         CardLayout card = (CardLayout)jPanel1.getLayout();
         card.show(jPanel1, "grundbegCard");
         try {
-            htmlToJavaPanel objgrundbegPanel = new htmlToJavaPanel(grundbegPane, new File("/Users/denisehfg/Documents/Semester 2/Programmieren 2/inFormel/P2_De_Le_Fe_To/HTML_Theorie/HTML_Mathe1/HTML_Mathe1.html").toURI().toURL());
+            htmlToJavaPanel objgrundbegPanel = new htmlToJavaPanel(grundbegPane, new File("/Users/denisehfg/Documents/Semester 2/Programmieren 2/inFormel/P2_De_Le_Fe_To/inFormel/assets/HTML_Mathe1/HTML_Grundbegriffe.html").toURI().toURL());
             objgrundbegPanel.buildPane();
         } catch (IOException e) {
             System.err.println("Attempted to read a bad URL");
@@ -1390,7 +1390,7 @@ public class inFormel_GUI extends javax.swing.JFrame {
         CardLayout card = (CardLayout)jPanel1.getLayout();
         card.show(jPanel1, "komplexeCard");
         try {
-            htmlToJavaPanel objkomplexePanel = new htmlToJavaPanel(komplexePane, new File("/Users/denisehfg/Documents/Semester 2/Programmieren 2/inFormel/P2_De_Le_Fe_To/HTML_Theorie/HTML_Mathe1/HTML_Mathe1.html").toURI().toURL());
+            htmlToJavaPanel objkomplexePanel = new htmlToJavaPanel(komplexePane, new File("/Users/denisehfg/Documents/Semester 2/Programmieren 2/inFormel/P2_De_Le_Fe_To/inFormel/assets/HTML_Mathe1/HTML_komplexeRechnung.html").toURI().toURL());
             objkomplexePanel.buildPane();
         } catch (IOException e) {
             System.err.println("Attempted to read a bad URL");

@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="de">
+    <head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="/../P2.css" type="text/css">		
+    </head>
+    <body>
+		<h1>Programmieren</h1>
+	
+		<h2>2. Klassendefinitionen</h2>
+		
+		<h3>2.1 Datenfelder</h3>
+			<table>
+				<tr>
+					<td>
+						<blockquote>
+                                                    <p>Datenfelder finden wir im Kopf der Klasse, diese speichern die Daten die das jeweilige Objekt benutzt.<br>
+                                                        Datenfelder speichern Daten dauerhaft in einem Objekt. Rechts sehen wir wie Datenfelder im Kopf der Klasse deklariert werden.<br>
+                                                    </p>
+						</blockquote>
+					</td>
+					<td>
+						<blockquote>
+							<img src="Datenfeld.png" alt="Datenfeld">
+						</blockquote></td>
+				</tr>
+			</table>
+		
+                <h3>2.2 Datentypen</h3>
+                <h4>2.2.1 Zeichen</h4>	
+                <table>
+				<tr>
+					<td>
+						<blockquote>
+                                                    <p>Für Zeichen wird der Datentyp <b>char</b> verwendet.<br>
+                                                        Dieser kann Umlaute, wie auch europäische und asiatische Zeichen umwandeln.<br><br>
+                                                        <i>char umlaut = 'Ü';<br>
+                                                        System.out.println("Der Buchstabe U und E ergibt:");<br>
+                                                        System.out.println(umlaut);</i><br><br>
+                                                        Der Wertebereich von char: 0 ... 65.535 (z. B. 'A').
+                                                        
+                                                    </p>
+						</blockquote>
+					</td>
+					
+				</tr>
+			</table>  
+                <h4>2.2.2 Ganze Zahlen</h4>	
+                <table>
+				<tr>
+					<td>
+						<blockquote>
+                                                    <p>Bei den ganzen Zahlen gibt es vier Datentypen:<br><br>
+                                                        <b>byte</b> ist der kleinste nummerische Datentyp in Java.<br>
+                                                        byte werden zumeist im Zusammenhang mit Feldern genutzt.<br><br>
+                                                        Der Wertebereich von byte: -128 ... 127.<br><br><br>
+                                                        
+                                                        Mit <b>short</b> werden oft Konstanten angelegt,<br>
+                                                        Jedoch wird der Datentyp nur selten gebraucht.<br><br>
+                                                        Der Wertebereich von short: -32.768 ... 32.767.<br><br><br>
+                                                            
+                                                        <b>int</b> bzw. <b>integer</b> ist der am häufigst genutze Datentyp.<br><br>
+                                                        <i>int a = 1;<br>
+                                                            int b = 1;<br>
+                                                            int c = a + b;<br>
+                                                        System.out.println("a mit dem Wert " + a + " plus B mit dem Wert " + b + " ergibt: C " + c);
+                                                        </i><br><br>
+                                                        
+                                                        Der Wertebereich von int: -2.147.483.648 ... 2.147.483.647.<br><br><br>
+                                                        
+                                                        Der Datentyp <b>long</b> ist eine Erweiterung des Typs int, hat jedoch im Gegesatz dazu 8bytes an Görße, anstatt 4bytes.<br><br>
+                                                         Der Wertebereich von long: -2^63 bis 2^63-1, ab Java 8 auch 0 bis 2^64-1.
+                                                         
+                                                        
+                                                        
+                                                        </p>
+						</blockquote>
+					</td>
+                                        
+                                        
+					
+				</tr>
+			</table>  
+                <h4>2.2.3 Kommazahlen</h4>	
+                <table>
+				<tr>
+					<td>
+						<blockquote>
+                                                    <p>Bei den Kommazahlen gibt es zwei Datentypen:<br><br>
+                                                        <b>float</b> speichert Gleitkommazahlen in einer Größe von 4byte.<br>
+                                                        Die Genauigkeit liegt bei 7 signifikanten Stellen.<br><br>
+                                                        Der Wertebereich von float: +/-1,4E-45 ... +/-3,4E+38.<br><br><br>
+                                                        
+                                                        <b>double</b> hat Gleitkommavariablen mit einer Größe von 8 Byte. Die Genauigkeit liegt bei 15 signifikanten Stellen.<br><br>
+                                                        
+                                                        <i>
+                                                            double a = 1.00; <br>
+                                                            double b = 3.00; <br>
+                                                            double c = a/b;<br>
+                                                            double d = c * b; // sollte a ergeben <br>
+                                                            System.out.println(a + "/" + b + " = " + c);<br>
+                                                            System.out.println(c + "*" + b + " = " + d + " ( " + a + ")");
+                                                            <br><br>
+                                                            Ausgabe:
+                                                            <br><br>
+                                                            1.0/3.0 = 0.3333333333333333<br>
+                                                            0.3333333333333333*3.0 = 1.0 ( 1.0)<br>
+                                                        </i>
+                                                        <br>
+                                                        Der Wertebereich von double: +/-4,9E-324 ... +/-1,7E+308.
+                                                        </p>
+						</blockquote>
+					</td>
+					
+				</tr>
+			</table>  
+                <h4>2.2.4 Boolscher Typ</h4>	
+                <table>
+				<tr>
+					<td>
+						<blockquote>
+                                                    <p>Eine boolesche Variable <b>boolean</b> kann einen von zwei Zuständen annehmen: true oder false. <br>
+                                                        Dies repräsentiert in Ausdrücken zumeist eine Bedingung ist erfüllt – oder eben nicht.<br>
+                                                        Boolsche Variablen werden zumeist im Zusammenhang mit Verzweigungen gebraucht.<br><br>
+                                                        <i>
+                                                            boolean istWahr = true;<br>
+                                                            <br>
+                                                            if (istWahr) {<br>
+                                                            // Mach irgendwas<br>
+                                                            }<br>
+                                                            
+                                                        </i>
+                                                    </p>
+						</blockquote>
+					</td>
+				
+				</tr>
+			</table> 
+                
+                <h3>2.3 Konstruktor</h3>
+			<table>
+				<tr>
+					<td>
+						<blockquote>
+							<p>Der Konstruktor ist eine Methode, die bei Instanzierung (new) einer Klasse aufgerufen wird. Er trägt den Namen der Klasse.<br> Der Konstruktor hat keinerlei Rückgabetyp, nicht einmal void. Die Aufgabe des Konstruktors ist es, ein Objekt zu initialisieren.<br><br>
+
+							Der Standardkonstruktor hat keine Parameter. Im Konstruktor findet die Initialisierung statt, also alle die Vorgänge, <br>die genau einmal zu Start erledigt werden sollten, bevor die Variable benutzt wird. Da die Variable sich quasi <br>selbst vorbereitet, werden Initialisierungsfehler vermieden und der Code wird stabiler.<br><br>
+
+							Ein Konstruktor trägt den Namen der Klasse und hat keinen Rückgabewert. Der Standarkonstruktor hat keine Parameter.<br> Es kann weitere (überladene) Konstruktoren mit Parametern geben.</p>
+						</blockquote>
+					</td>
+					<td>
+						<blockquote>
+							<p><img src="Konstruktor.png" alt="Konstruktor"></p>
+						</blockquote></td>
+				</tr>
+			</table>
+                
+                <h3>2.4 Methoden</h3>
+			<table>
+				<tr>
+					<td>
+						<blockquote>
+							<p>Die Methode ist ein Bestandteil einer Klasse und kann auch nur in einer Klasse deklariert und implementiert werden.<br> Methoden sind Interaktionsmittel von Objekten. Es gibt Methoden mit einem oder keinem Rückgabewert, d.h. es ist <br>nicht möglich einer Methode mehr als einen Rückgabewert zuzuordnen. Der Rückgabewert einer Methode kann allerdings einen beliebigen Datentyp annehmen, so dass man gegebenenfalls auch Arrays oder Objekte als Rückgabewert benutzen kann. Einer Methode können jedoch beliebig viele Parameter übergeben werden.</p>
+						</blockquote>
+					</td>
+					<td>
+						<blockquote>
+							<p><img src="Methode.png" alt="Methode"></p>
+						</blockquote></td>
+				</tr>
+			</table>
+			
+    </body>
+</html>
