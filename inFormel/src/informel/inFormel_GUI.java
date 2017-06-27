@@ -63,10 +63,8 @@ public class inFormel_GUI extends javax.swing.JFrame {
         jButton13 = new javax.swing.JButton();
         jButton14 = new javax.swing.JButton();
         jButton15 = new javax.swing.JButton();
-        jButton16 = new javax.swing.JButton();
         Arrays = new javax.swing.JPanel();
         jButton17 = new javax.swing.JButton();
-        jButton19 = new javax.swing.JButton();
         arrayPane = new javax.swing.JScrollPane();
         jEditorPane1 = new javax.swing.JEditorPane();
         Basics = new javax.swing.JPanel();
@@ -74,78 +72,63 @@ public class inFormel_GUI extends javax.swing.JFrame {
         jButton23 = new javax.swing.JButton();
         jButton24 = new javax.swing.JButton();
         jButton25 = new javax.swing.JButton();
-        jButton26 = new javax.swing.JButton();
         Mathe = new javax.swing.JPanel();
         jButton21 = new javax.swing.JButton();
         jButton27 = new javax.swing.JButton();
         jButton28 = new javax.swing.JButton();
         jButton29 = new javax.swing.JButton();
-        jButton30 = new javax.swing.JButton();
         Klassendefinition = new javax.swing.JPanel();
         jButton22 = new javax.swing.JButton();
-        jButton31 = new javax.swing.JButton();
         klassdefPane = new javax.swing.JScrollPane();
         jEditorPane2 = new javax.swing.JEditorPane();
         IfAbfragen = new javax.swing.JPanel();
         jButton33 = new javax.swing.JButton();
-        jButton34 = new javax.swing.JButton();
         ifPane = new javax.swing.JScrollPane();
         jEditorPane3 = new javax.swing.JEditorPane();
         Schleifen = new javax.swing.JPanel();
         jButton36 = new javax.swing.JButton();
-        jButton37 = new javax.swing.JButton();
         schleifenPane = new javax.swing.JScrollPane();
         jEditorPane4 = new javax.swing.JEditorPane();
         ObjundKlassen = new javax.swing.JPanel();
         jButton38 = new javax.swing.JButton();
-        jButton39 = new javax.swing.JButton();
         objklassPane = new javax.swing.JScrollPane();
         jEditorPane5 = new javax.swing.JEditorPane();
         GrundbegriffeMathe = new javax.swing.JPanel();
         jButton40 = new javax.swing.JButton();
-        jButton41 = new javax.swing.JButton();
         grundbegPane = new javax.swing.JScrollPane();
         jEditorPane6 = new javax.swing.JEditorPane();
         KomplexeRechnung = new javax.swing.JPanel();
         jButton42 = new javax.swing.JButton();
-        jButton43 = new javax.swing.JButton();
         komplexePane = new javax.swing.JScrollPane();
         jEditorPane7 = new javax.swing.JEditorPane();
         Darstellungsformen = new javax.swing.JPanel();
         jButton44 = new javax.swing.JButton();
-        jButton45 = new javax.swing.JButton();
         darstellungPane = new javax.swing.JScrollPane();
         jEditorPane8 = new javax.swing.JEditorPane();
         Dreiecke = new javax.swing.JPanel();
         jButton46 = new javax.swing.JButton();
-        jButton47 = new javax.swing.JButton();
         dreieckePane = new javax.swing.JScrollPane();
         jEditorPane9 = new javax.swing.JEditorPane();
         Bruchrechnen = new javax.swing.JPanel();
         jButton48 = new javax.swing.JButton();
-        jButton49 = new javax.swing.JButton();
         bruchPane = new javax.swing.JScrollPane();
         jEditorPane10 = new javax.swing.JEditorPane();
         TypoCont = new javax.swing.JPanel();
         jButton52 = new javax.swing.JButton();
-        jButton53 = new javax.swing.JButton();
         typoPane = new javax.swing.JScrollPane();
         jEditorPane12 = new javax.swing.JEditorPane();
         Taschenrechner = new javax.swing.JPanel();
         jButton54 = new javax.swing.JButton();
-        jButton55 = new javax.swing.JButton();
         taschenrechnerPane = new javax.swing.JScrollPane();
         jEditorPane13 = new javax.swing.JEditorPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
-        jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1200, 675));
-        setResizable(false);
+        setPreferredSize(new java.awt.Dimension(1200, 687));
 
         jPanel1.setRequestFocusEnabled(false);
-        jPanel1.setSize(new java.awt.Dimension(1200, 675));
+        jPanel1.setSize(new java.awt.Dimension(1500, 900));
         jPanel1.setLayout(new java.awt.CardLayout());
 
         Hauptscreen.setBackground(new java.awt.Color(255, 255, 255));
@@ -246,7 +229,7 @@ public class inFormel_GUI extends javax.swing.JFrame {
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, HauptscreenLayout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jButton8)))))
-                .addContainerGap(273, Short.MAX_VALUE))
+                .addContainerGap(285, Short.MAX_VALUE))
         );
 
         jPanel1.add(Hauptscreen, "mainCard");
@@ -316,21 +299,10 @@ public class inFormel_GUI extends javax.swing.JFrame {
             }
         });
 
-        jButton16.setText("Zurück");
-        jButton16.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton16MouseClicked(evt);
-            }
-        });
-
         javax.swing.GroupLayout ProgrammierenLayout = new javax.swing.GroupLayout(Programmieren);
         Programmieren.setLayout(ProgrammierenLayout);
         ProgrammierenLayout.setHorizontalGroup(
             ProgrammierenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ProgrammierenLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton16)
-                .addContainerGap())
             .addGroup(ProgrammierenLayout.createSequentialGroup()
                 .addGap(229, 229, 229)
                 .addGroup(ProgrammierenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -351,8 +323,7 @@ public class inFormel_GUI extends javax.swing.JFrame {
         ProgrammierenLayout.setVerticalGroup(
             ProgrammierenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ProgrammierenLayout.createSequentialGroup()
-                .addComponent(jButton16)
-                .addGap(60, 60, 60)
+                .addGap(89, 89, 89)
                 .addGroup(ProgrammierenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(ProgrammierenLayout.createSequentialGroup()
                         .addComponent(jButton15)
@@ -379,13 +350,6 @@ public class inFormel_GUI extends javax.swing.JFrame {
         jButton17.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
         jButton17.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
 
-        jButton19.setText("Zurück");
-        jButton19.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton19MouseClicked(evt);
-            }
-        });
-
         arrayPane.setViewportView(jEditorPane1);
 
         javax.swing.GroupLayout ArraysLayout = new javax.swing.GroupLayout(Arrays);
@@ -395,27 +359,18 @@ public class inFormel_GUI extends javax.swing.JFrame {
             .addGroup(ArraysLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jButton17)
-                .addGroup(ArraysLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(ArraysLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton19)
-                        .addContainerGap())
-                    .addGroup(ArraysLayout.createSequentialGroup()
-                        .addGap(43, 43, 43)
-                        .addComponent(arrayPane, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(538, Short.MAX_VALUE))))
+                .addGap(43, 43, 43)
+                .addComponent(arrayPane, javax.swing.GroupLayout.PREFERRED_SIZE, 1000, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(24, Short.MAX_VALUE))
         );
         ArraysLayout.setVerticalGroup(
             ArraysLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ArraysLayout.createSequentialGroup()
-                .addComponent(arrayPane)
+                .addComponent(arrayPane, javax.swing.GroupLayout.DEFAULT_SIZE, 681, Short.MAX_VALUE)
                 .addContainerGap())
             .addGroup(ArraysLayout.createSequentialGroup()
-                .addGroup(ArraysLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton19)
-                    .addGroup(ArraysLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jButton17)))
+                .addContainerGap()
+                .addComponent(jButton17)
                 .addGap(34, 558, Short.MAX_VALUE))
         );
 
@@ -463,21 +418,10 @@ public class inFormel_GUI extends javax.swing.JFrame {
             }
         });
 
-        jButton26.setText("Zurück");
-        jButton26.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton26MouseClicked(evt);
-            }
-        });
-
         javax.swing.GroupLayout BasicsLayout = new javax.swing.GroupLayout(Basics);
         Basics.setLayout(BasicsLayout);
         BasicsLayout.setHorizontalGroup(
             BasicsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BasicsLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton26)
-                .addContainerGap())
             .addGroup(BasicsLayout.createSequentialGroup()
                 .addGap(229, 229, 229)
                 .addComponent(jButton24)
@@ -494,8 +438,7 @@ public class inFormel_GUI extends javax.swing.JFrame {
         BasicsLayout.setVerticalGroup(
             BasicsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BasicsLayout.createSequentialGroup()
-                .addComponent(jButton26)
-                .addGap(60, 60, 60)
+                .addGap(89, 89, 89)
                 .addGroup(BasicsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(BasicsLayout.createSequentialGroup()
                         .addComponent(jButton25)
@@ -550,21 +493,10 @@ public class inFormel_GUI extends javax.swing.JFrame {
             }
         });
 
-        jButton30.setText("Zurück");
-        jButton30.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton30MouseClicked(evt);
-            }
-        });
-
         javax.swing.GroupLayout MatheLayout = new javax.swing.GroupLayout(Mathe);
         Mathe.setLayout(MatheLayout);
         MatheLayout.setHorizontalGroup(
             MatheLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MatheLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton30)
-                .addContainerGap())
             .addGroup(MatheLayout.createSequentialGroup()
                 .addGap(229, 229, 229)
                 .addComponent(jButton28)
@@ -581,8 +513,7 @@ public class inFormel_GUI extends javax.swing.JFrame {
         MatheLayout.setVerticalGroup(
             MatheLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MatheLayout.createSequentialGroup()
-                .addComponent(jButton30)
-                .addGap(60, 60, 60)
+                .addGap(89, 89, 89)
                 .addGroup(MatheLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(MatheLayout.createSequentialGroup()
                         .addComponent(jButton29)
@@ -603,13 +534,6 @@ public class inFormel_GUI extends javax.swing.JFrame {
         jButton22.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
         jButton22.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
 
-        jButton31.setText("Zurück");
-        jButton31.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton31MouseClicked(evt);
-            }
-        });
-
         klassdefPane.setViewportView(jEditorPane2);
 
         javax.swing.GroupLayout KlassendefinitionLayout = new javax.swing.GroupLayout(Klassendefinition);
@@ -619,27 +543,18 @@ public class inFormel_GUI extends javax.swing.JFrame {
             .addGroup(KlassendefinitionLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jButton22)
-                .addGroup(KlassendefinitionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(KlassendefinitionLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton31)
-                        .addContainerGap())
-                    .addGroup(KlassendefinitionLayout.createSequentialGroup()
-                        .addGap(43, 43, 43)
-                        .addComponent(klassdefPane, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(538, Short.MAX_VALUE))))
+                .addGap(43, 43, 43)
+                .addComponent(klassdefPane, javax.swing.GroupLayout.PREFERRED_SIZE, 1000, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(24, Short.MAX_VALUE))
         );
         KlassendefinitionLayout.setVerticalGroup(
             KlassendefinitionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(KlassendefinitionLayout.createSequentialGroup()
-                .addComponent(klassdefPane)
+                .addComponent(klassdefPane, javax.swing.GroupLayout.DEFAULT_SIZE, 681, Short.MAX_VALUE)
                 .addContainerGap())
             .addGroup(KlassendefinitionLayout.createSequentialGroup()
-                .addGroup(KlassendefinitionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton31)
-                    .addGroup(KlassendefinitionLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jButton22)))
+                .addContainerGap()
+                .addComponent(jButton22)
                 .addGap(34, 558, Short.MAX_VALUE))
         );
 
@@ -653,13 +568,6 @@ public class inFormel_GUI extends javax.swing.JFrame {
         jButton33.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
         jButton33.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
 
-        jButton34.setText("Zurück");
-        jButton34.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton34MouseClicked(evt);
-            }
-        });
-
         ifPane.setViewportView(jEditorPane3);
 
         javax.swing.GroupLayout IfAbfragenLayout = new javax.swing.GroupLayout(IfAbfragen);
@@ -669,27 +577,18 @@ public class inFormel_GUI extends javax.swing.JFrame {
             .addGroup(IfAbfragenLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jButton33)
-                .addGroup(IfAbfragenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(IfAbfragenLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton34)
-                        .addContainerGap())
-                    .addGroup(IfAbfragenLayout.createSequentialGroup()
-                        .addGap(43, 43, 43)
-                        .addComponent(ifPane, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(538, Short.MAX_VALUE))))
+                .addGap(43, 43, 43)
+                .addComponent(ifPane, javax.swing.GroupLayout.PREFERRED_SIZE, 1000, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(24, Short.MAX_VALUE))
         );
         IfAbfragenLayout.setVerticalGroup(
             IfAbfragenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(IfAbfragenLayout.createSequentialGroup()
-                .addComponent(ifPane)
+                .addComponent(ifPane, javax.swing.GroupLayout.DEFAULT_SIZE, 681, Short.MAX_VALUE)
                 .addContainerGap())
             .addGroup(IfAbfragenLayout.createSequentialGroup()
-                .addGroup(IfAbfragenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton34)
-                    .addGroup(IfAbfragenLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jButton33)))
+                .addContainerGap()
+                .addComponent(jButton33)
                 .addGap(34, 558, Short.MAX_VALUE))
         );
 
@@ -703,13 +602,6 @@ public class inFormel_GUI extends javax.swing.JFrame {
         jButton36.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
         jButton36.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
 
-        jButton37.setText("Zurück");
-        jButton37.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton37MouseClicked(evt);
-            }
-        });
-
         schleifenPane.setViewportView(jEditorPane4);
 
         javax.swing.GroupLayout SchleifenLayout = new javax.swing.GroupLayout(Schleifen);
@@ -719,27 +611,18 @@ public class inFormel_GUI extends javax.swing.JFrame {
             .addGroup(SchleifenLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jButton36)
-                .addGroup(SchleifenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(SchleifenLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton37)
-                        .addContainerGap())
-                    .addGroup(SchleifenLayout.createSequentialGroup()
-                        .addGap(43, 43, 43)
-                        .addComponent(schleifenPane, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(538, Short.MAX_VALUE))))
+                .addGap(43, 43, 43)
+                .addComponent(schleifenPane, javax.swing.GroupLayout.PREFERRED_SIZE, 1000, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(24, Short.MAX_VALUE))
         );
         SchleifenLayout.setVerticalGroup(
             SchleifenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SchleifenLayout.createSequentialGroup()
-                .addComponent(schleifenPane)
+                .addComponent(schleifenPane, javax.swing.GroupLayout.DEFAULT_SIZE, 681, Short.MAX_VALUE)
                 .addContainerGap())
             .addGroup(SchleifenLayout.createSequentialGroup()
-                .addGroup(SchleifenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton37)
-                    .addGroup(SchleifenLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jButton36)))
+                .addContainerGap()
+                .addComponent(jButton36)
                 .addGap(34, 558, Short.MAX_VALUE))
         );
 
@@ -753,13 +636,6 @@ public class inFormel_GUI extends javax.swing.JFrame {
         jButton38.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
         jButton38.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
 
-        jButton39.setText("Zurück");
-        jButton39.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton39MouseClicked(evt);
-            }
-        });
-
         objklassPane.setViewportView(jEditorPane5);
 
         javax.swing.GroupLayout ObjundKlassenLayout = new javax.swing.GroupLayout(ObjundKlassen);
@@ -769,27 +645,18 @@ public class inFormel_GUI extends javax.swing.JFrame {
             .addGroup(ObjundKlassenLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jButton38)
-                .addGroup(ObjundKlassenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(ObjundKlassenLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton39)
-                        .addContainerGap())
-                    .addGroup(ObjundKlassenLayout.createSequentialGroup()
-                        .addGap(43, 43, 43)
-                        .addComponent(objklassPane, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(538, Short.MAX_VALUE))))
+                .addGap(43, 43, 43)
+                .addComponent(objklassPane, javax.swing.GroupLayout.PREFERRED_SIZE, 1000, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(24, Short.MAX_VALUE))
         );
         ObjundKlassenLayout.setVerticalGroup(
             ObjundKlassenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ObjundKlassenLayout.createSequentialGroup()
-                .addComponent(objklassPane)
+                .addComponent(objklassPane, javax.swing.GroupLayout.DEFAULT_SIZE, 681, Short.MAX_VALUE)
                 .addContainerGap())
             .addGroup(ObjundKlassenLayout.createSequentialGroup()
-                .addGroup(ObjundKlassenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton39)
-                    .addGroup(ObjundKlassenLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jButton38)))
+                .addContainerGap()
+                .addComponent(jButton38)
                 .addGap(34, 558, Short.MAX_VALUE))
         );
 
@@ -803,13 +670,6 @@ public class inFormel_GUI extends javax.swing.JFrame {
         jButton40.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
         jButton40.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
 
-        jButton41.setText("Zurück");
-        jButton41.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton41MouseClicked(evt);
-            }
-        });
-
         grundbegPane.setViewportView(jEditorPane6);
 
         javax.swing.GroupLayout GrundbegriffeMatheLayout = new javax.swing.GroupLayout(GrundbegriffeMathe);
@@ -819,27 +679,18 @@ public class inFormel_GUI extends javax.swing.JFrame {
             .addGroup(GrundbegriffeMatheLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jButton40)
-                .addGroup(GrundbegriffeMatheLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(GrundbegriffeMatheLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton41)
-                        .addContainerGap())
-                    .addGroup(GrundbegriffeMatheLayout.createSequentialGroup()
-                        .addGap(43, 43, 43)
-                        .addComponent(grundbegPane, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(538, Short.MAX_VALUE))))
+                .addGap(43, 43, 43)
+                .addComponent(grundbegPane, javax.swing.GroupLayout.PREFERRED_SIZE, 1000, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(24, Short.MAX_VALUE))
         );
         GrundbegriffeMatheLayout.setVerticalGroup(
             GrundbegriffeMatheLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(GrundbegriffeMatheLayout.createSequentialGroup()
-                .addComponent(grundbegPane)
+                .addComponent(grundbegPane, javax.swing.GroupLayout.DEFAULT_SIZE, 681, Short.MAX_VALUE)
                 .addContainerGap())
             .addGroup(GrundbegriffeMatheLayout.createSequentialGroup()
-                .addGroup(GrundbegriffeMatheLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton41)
-                    .addGroup(GrundbegriffeMatheLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jButton40)))
+                .addContainerGap()
+                .addComponent(jButton40)
                 .addGap(34, 558, Short.MAX_VALUE))
         );
 
@@ -853,13 +704,6 @@ public class inFormel_GUI extends javax.swing.JFrame {
         jButton42.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
         jButton42.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
 
-        jButton43.setText("Zurück");
-        jButton43.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton43MouseClicked(evt);
-            }
-        });
-
         komplexePane.setViewportView(jEditorPane7);
 
         javax.swing.GroupLayout KomplexeRechnungLayout = new javax.swing.GroupLayout(KomplexeRechnung);
@@ -869,27 +713,18 @@ public class inFormel_GUI extends javax.swing.JFrame {
             .addGroup(KomplexeRechnungLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jButton42)
-                .addGroup(KomplexeRechnungLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(KomplexeRechnungLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton43)
-                        .addContainerGap())
-                    .addGroup(KomplexeRechnungLayout.createSequentialGroup()
-                        .addGap(43, 43, 43)
-                        .addComponent(komplexePane, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(538, Short.MAX_VALUE))))
+                .addGap(43, 43, 43)
+                .addComponent(komplexePane, javax.swing.GroupLayout.PREFERRED_SIZE, 1000, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(24, Short.MAX_VALUE))
         );
         KomplexeRechnungLayout.setVerticalGroup(
             KomplexeRechnungLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(KomplexeRechnungLayout.createSequentialGroup()
-                .addComponent(komplexePane)
+                .addComponent(komplexePane, javax.swing.GroupLayout.DEFAULT_SIZE, 681, Short.MAX_VALUE)
                 .addContainerGap())
             .addGroup(KomplexeRechnungLayout.createSequentialGroup()
-                .addGroup(KomplexeRechnungLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton43)
-                    .addGroup(KomplexeRechnungLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jButton42)))
+                .addContainerGap()
+                .addComponent(jButton42)
                 .addGap(34, 558, Short.MAX_VALUE))
         );
 
@@ -903,13 +738,6 @@ public class inFormel_GUI extends javax.swing.JFrame {
         jButton44.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
         jButton44.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
 
-        jButton45.setText("Zurück");
-        jButton45.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton45MouseClicked(evt);
-            }
-        });
-
         darstellungPane.setViewportView(jEditorPane8);
 
         javax.swing.GroupLayout DarstellungsformenLayout = new javax.swing.GroupLayout(Darstellungsformen);
@@ -919,27 +747,18 @@ public class inFormel_GUI extends javax.swing.JFrame {
             .addGroup(DarstellungsformenLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jButton44)
-                .addGroup(DarstellungsformenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(DarstellungsformenLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton45)
-                        .addContainerGap())
-                    .addGroup(DarstellungsformenLayout.createSequentialGroup()
-                        .addGap(43, 43, 43)
-                        .addComponent(darstellungPane, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(538, Short.MAX_VALUE))))
+                .addGap(43, 43, 43)
+                .addComponent(darstellungPane, javax.swing.GroupLayout.PREFERRED_SIZE, 1000, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(24, Short.MAX_VALUE))
         );
         DarstellungsformenLayout.setVerticalGroup(
             DarstellungsformenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DarstellungsformenLayout.createSequentialGroup()
-                .addComponent(darstellungPane)
+                .addComponent(darstellungPane, javax.swing.GroupLayout.DEFAULT_SIZE, 681, Short.MAX_VALUE)
                 .addContainerGap())
             .addGroup(DarstellungsformenLayout.createSequentialGroup()
-                .addGroup(DarstellungsformenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton45)
-                    .addGroup(DarstellungsformenLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jButton44)))
+                .addContainerGap()
+                .addComponent(jButton44)
                 .addGap(34, 558, Short.MAX_VALUE))
         );
 
@@ -953,13 +772,6 @@ public class inFormel_GUI extends javax.swing.JFrame {
         jButton46.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
         jButton46.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
 
-        jButton47.setText("Zurück");
-        jButton47.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton47MouseClicked(evt);
-            }
-        });
-
         dreieckePane.setViewportView(jEditorPane9);
 
         javax.swing.GroupLayout DreieckeLayout = new javax.swing.GroupLayout(Dreiecke);
@@ -969,27 +781,18 @@ public class inFormel_GUI extends javax.swing.JFrame {
             .addGroup(DreieckeLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jButton46)
-                .addGroup(DreieckeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(DreieckeLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton47)
-                        .addContainerGap())
-                    .addGroup(DreieckeLayout.createSequentialGroup()
-                        .addGap(43, 43, 43)
-                        .addComponent(dreieckePane, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(538, Short.MAX_VALUE))))
+                .addGap(43, 43, 43)
+                .addComponent(dreieckePane, javax.swing.GroupLayout.PREFERRED_SIZE, 1000, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(24, Short.MAX_VALUE))
         );
         DreieckeLayout.setVerticalGroup(
             DreieckeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DreieckeLayout.createSequentialGroup()
-                .addComponent(dreieckePane)
+                .addComponent(dreieckePane, javax.swing.GroupLayout.DEFAULT_SIZE, 681, Short.MAX_VALUE)
                 .addContainerGap())
             .addGroup(DreieckeLayout.createSequentialGroup()
-                .addGroup(DreieckeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton47)
-                    .addGroup(DreieckeLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jButton46)))
+                .addContainerGap()
+                .addComponent(jButton46)
                 .addGap(34, 558, Short.MAX_VALUE))
         );
 
@@ -1003,13 +806,6 @@ public class inFormel_GUI extends javax.swing.JFrame {
         jButton48.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
         jButton48.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
 
-        jButton49.setText("Zurück");
-        jButton49.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton49MouseClicked(evt);
-            }
-        });
-
         bruchPane.setViewportView(jEditorPane10);
 
         javax.swing.GroupLayout BruchrechnenLayout = new javax.swing.GroupLayout(Bruchrechnen);
@@ -1019,46 +815,31 @@ public class inFormel_GUI extends javax.swing.JFrame {
             .addGroup(BruchrechnenLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jButton48)
-                .addGroup(BruchrechnenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(BruchrechnenLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton49)
-                        .addContainerGap())
-                    .addGroup(BruchrechnenLayout.createSequentialGroup()
-                        .addGap(43, 43, 43)
-                        .addComponent(bruchPane, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(538, Short.MAX_VALUE))))
+                .addGap(43, 43, 43)
+                .addComponent(bruchPane, javax.swing.GroupLayout.PREFERRED_SIZE, 1000, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(24, Short.MAX_VALUE))
         );
         BruchrechnenLayout.setVerticalGroup(
             BruchrechnenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(BruchrechnenLayout.createSequentialGroup()
-                .addComponent(bruchPane)
+                .addComponent(bruchPane, javax.swing.GroupLayout.DEFAULT_SIZE, 681, Short.MAX_VALUE)
                 .addContainerGap())
             .addGroup(BruchrechnenLayout.createSequentialGroup()
-                .addGroup(BruchrechnenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton49)
-                    .addGroup(BruchrechnenLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jButton48)))
+                .addContainerGap()
+                .addComponent(jButton48)
                 .addGap(34, 558, Short.MAX_VALUE))
         );
 
         jPanel1.add(Bruchrechnen, "bruchCard");
 
         TypoCont.setBackground(new java.awt.Color(255, 255, 255));
+        TypoCont.setSize(new java.awt.Dimension(1200, 800));
 
         jButton52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle_Typo.png"))); // NOI18N
         jButton52.setBorderPainted(false);
         jButton52.setContentAreaFilled(false);
         jButton52.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
         jButton52.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
-
-        jButton53.setText("Zurück");
-        jButton53.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton53MouseClicked(evt);
-            }
-        });
 
         typoPane.setViewportView(jEditorPane12);
 
@@ -1069,28 +850,19 @@ public class inFormel_GUI extends javax.swing.JFrame {
             .addGroup(TypoContLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jButton52)
-                .addGroup(TypoContLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(TypoContLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton53)
-                        .addContainerGap())
-                    .addGroup(TypoContLayout.createSequentialGroup()
-                        .addGap(43, 43, 43)
-                        .addComponent(typoPane, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(538, Short.MAX_VALUE))))
+                .addGap(43, 43, 43)
+                .addComponent(typoPane, javax.swing.GroupLayout.PREFERRED_SIZE, 1000, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(24, Short.MAX_VALUE))
         );
         TypoContLayout.setVerticalGroup(
             TypoContLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(TypoContLayout.createSequentialGroup()
-                .addComponent(typoPane)
+                .addComponent(typoPane, javax.swing.GroupLayout.DEFAULT_SIZE, 681, Short.MAX_VALUE)
                 .addContainerGap())
             .addGroup(TypoContLayout.createSequentialGroup()
-                .addGroup(TypoContLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton53)
-                    .addGroup(TypoContLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jButton52)))
-                .addGap(34, 558, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(jButton52)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel1.add(TypoCont, "typoCard");
@@ -1103,13 +875,6 @@ public class inFormel_GUI extends javax.swing.JFrame {
         jButton54.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
         jButton54.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
 
-        jButton55.setText("Zurück");
-        jButton55.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton55MouseClicked(evt);
-            }
-        });
-
         taschenrechnerPane.setViewportView(jEditorPane13);
 
         javax.swing.GroupLayout TaschenrechnerLayout = new javax.swing.GroupLayout(Taschenrechner);
@@ -1119,27 +884,18 @@ public class inFormel_GUI extends javax.swing.JFrame {
             .addGroup(TaschenrechnerLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jButton54)
-                .addGroup(TaschenrechnerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(TaschenrechnerLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton55)
-                        .addContainerGap())
-                    .addGroup(TaschenrechnerLayout.createSequentialGroup()
-                        .addGap(43, 43, 43)
-                        .addComponent(taschenrechnerPane, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(538, Short.MAX_VALUE))))
+                .addGap(43, 43, 43)
+                .addComponent(taschenrechnerPane, javax.swing.GroupLayout.PREFERRED_SIZE, 1000, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(24, Short.MAX_VALUE))
         );
         TaschenrechnerLayout.setVerticalGroup(
             TaschenrechnerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(TaschenrechnerLayout.createSequentialGroup()
-                .addComponent(taschenrechnerPane)
+                .addComponent(taschenrechnerPane, javax.swing.GroupLayout.DEFAULT_SIZE, 681, Short.MAX_VALUE)
                 .addContainerGap())
             .addGroup(TaschenrechnerLayout.createSequentialGroup()
-                .addGroup(TaschenrechnerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton55)
-                    .addGroup(TaschenrechnerLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jButton54)))
+                .addContainerGap()
+                .addComponent(jButton54)
                 .addGap(34, 558, Short.MAX_VALUE))
         );
 
@@ -1152,14 +908,6 @@ public class inFormel_GUI extends javax.swing.JFrame {
             }
         });
         jMenuBar1.add(jMenu1);
-
-        jMenu2.setText("Zurück");
-        jMenu2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jMenu2MouseClicked(evt);
-            }
-        });
-        jMenuBar1.add(jMenu2);
 
         setJMenuBar(jMenuBar1);
 
@@ -1176,7 +924,7 @@ public class inFormel_GUI extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -1199,26 +947,11 @@ public class inFormel_GUI extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton13MouseClicked
 
-    private void jButton16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton16MouseClicked
-        CardLayout card = (CardLayout)jPanel1.getLayout();
-        card.show(jPanel1, "progCard");
-    }//GEN-LAST:event_jButton16MouseClicked
-
-    private void jButton19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton19MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton19MouseClicked
-
     private void jMenu1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu1MouseClicked
         // TODO add your handling code here:
         CardLayout card = (CardLayout)jPanel1.getLayout();
         card.show(jPanel1, "mainCard");
     }//GEN-LAST:event_jMenu1MouseClicked
-
-    private void jMenu2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu2MouseClicked
-        // TODO add your handling code here:
-        CardLayout card = (CardLayout)jPanel1.getLayout();
-        card.previous(jPanel1);
-    }//GEN-LAST:event_jMenu2MouseClicked
 
     private void jButton23MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton23MouseClicked
         CardLayout card = (CardLayout)jPanel1.getLayout();
@@ -1231,10 +964,6 @@ public class inFormel_GUI extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton23MouseClicked
 
-    private void jButton26MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton26MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton26MouseClicked
-
     private void jButton27MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton27MouseClicked
         CardLayout card = (CardLayout)jPanel1.getLayout();
         card.show(jPanel1, "darformCard");
@@ -1245,54 +974,6 @@ public class inFormel_GUI extends javax.swing.JFrame {
             System.err.println("Attempted to read a bad URL");
         }
     }//GEN-LAST:event_jButton27MouseClicked
-
-    private void jButton30MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton30MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton30MouseClicked
-
-    private void jButton31MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton31MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton31MouseClicked
-
-    private void jButton34MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton34MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton34MouseClicked
-
-    private void jButton37MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton37MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton37MouseClicked
-
-    private void jButton39MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton39MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton39MouseClicked
-
-    private void jButton41MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton41MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton41MouseClicked
-
-    private void jButton43MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton43MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton43MouseClicked
-
-    private void jButton45MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton45MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton45MouseClicked
-
-    private void jButton47MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton47MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton47MouseClicked
-
-    private void jButton49MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton49MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton49MouseClicked
-
-    private void jButton53MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton53MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton53MouseClicked
-
-    private void jButton55MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton55MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton55MouseClicked
 
     private void jButton6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton6MouseClicked
         CardLayout card = (CardLayout)jPanel1.getLayout();
@@ -1462,42 +1143,27 @@ public class inFormel_GUI extends javax.swing.JFrame {
     private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton14;
     private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton19;
     private javax.swing.JButton jButton20;
     private javax.swing.JButton jButton21;
     private javax.swing.JButton jButton22;
     private javax.swing.JButton jButton23;
     private javax.swing.JButton jButton24;
     private javax.swing.JButton jButton25;
-    private javax.swing.JButton jButton26;
     private javax.swing.JButton jButton27;
     private javax.swing.JButton jButton28;
     private javax.swing.JButton jButton29;
-    private javax.swing.JButton jButton30;
-    private javax.swing.JButton jButton31;
     private javax.swing.JButton jButton33;
-    private javax.swing.JButton jButton34;
     private javax.swing.JButton jButton36;
-    private javax.swing.JButton jButton37;
     private javax.swing.JButton jButton38;
-    private javax.swing.JButton jButton39;
     private javax.swing.JButton jButton40;
-    private javax.swing.JButton jButton41;
     private javax.swing.JButton jButton42;
-    private javax.swing.JButton jButton43;
     private javax.swing.JButton jButton44;
-    private javax.swing.JButton jButton45;
     private javax.swing.JButton jButton46;
-    private javax.swing.JButton jButton47;
     private javax.swing.JButton jButton48;
-    private javax.swing.JButton jButton49;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton52;
-    private javax.swing.JButton jButton53;
     private javax.swing.JButton jButton54;
-    private javax.swing.JButton jButton55;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
@@ -1515,7 +1181,6 @@ public class inFormel_GUI extends javax.swing.JFrame {
     private javax.swing.JEditorPane jEditorPane8;
     private javax.swing.JEditorPane jEditorPane9;
     private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane klassdefPane;
