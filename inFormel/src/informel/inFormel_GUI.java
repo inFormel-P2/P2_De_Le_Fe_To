@@ -1361,7 +1361,7 @@ public class inFormel_GUI extends javax.swing.JFrame {
 
     private void jButton25MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton25MouseClicked
         CardLayout card = (CardLayout)jPanel1.getLayout();
-        card.show(jPanel1, "dreiceckCard");
+        card.show(jPanel1, "dreieckCard");
           try {
             htmlToJavaPanel objdreieckePanel = new htmlToJavaPanel(dreieckePane, new File("/Users/denisehfg/Documents/Semester 2/Programmieren 2/inFormel/P2_De_Le_Fe_To/HTML_Theorie/HTML_Basics/Dreiecke/HTML_Template.html").toURI().toURL());
             objdreieckePanel.buildPane();
