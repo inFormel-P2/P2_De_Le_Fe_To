@@ -64,13 +64,78 @@ public class inFormel_GUI extends javax.swing.JFrame {
         jButton14 = new javax.swing.JButton();
         jButton15 = new javax.swing.JButton();
         jButton16 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
         Arrays = new javax.swing.JPanel();
         jButton17 = new javax.swing.JButton();
         jButton19 = new javax.swing.JButton();
         arrayPane = new javax.swing.JScrollPane();
         jEditorPane1 = new javax.swing.JEditorPane();
-        jButton18 = new javax.swing.JButton();
+        Basics = new javax.swing.JPanel();
+        jButton20 = new javax.swing.JButton();
+        jButton23 = new javax.swing.JButton();
+        jButton24 = new javax.swing.JButton();
+        jButton25 = new javax.swing.JButton();
+        jButton26 = new javax.swing.JButton();
+        Mathe = new javax.swing.JPanel();
+        jButton21 = new javax.swing.JButton();
+        jButton27 = new javax.swing.JButton();
+        jButton28 = new javax.swing.JButton();
+        jButton29 = new javax.swing.JButton();
+        jButton30 = new javax.swing.JButton();
+        Klassendefinition = new javax.swing.JPanel();
+        jButton22 = new javax.swing.JButton();
+        jButton31 = new javax.swing.JButton();
+        klassdefPane = new javax.swing.JScrollPane();
+        jEditorPane2 = new javax.swing.JEditorPane();
+        IfAbfragen = new javax.swing.JPanel();
+        jButton33 = new javax.swing.JButton();
+        jButton34 = new javax.swing.JButton();
+        ifPane = new javax.swing.JScrollPane();
+        jEditorPane3 = new javax.swing.JEditorPane();
+        Schleifen = new javax.swing.JPanel();
+        jButton36 = new javax.swing.JButton();
+        jButton37 = new javax.swing.JButton();
+        schleifenPane = new javax.swing.JScrollPane();
+        jEditorPane4 = new javax.swing.JEditorPane();
+        ObjundKlassen = new javax.swing.JPanel();
+        jButton38 = new javax.swing.JButton();
+        jButton39 = new javax.swing.JButton();
+        objklassPane = new javax.swing.JScrollPane();
+        jEditorPane5 = new javax.swing.JEditorPane();
+        GrundbegriffeMathe = new javax.swing.JPanel();
+        jButton40 = new javax.swing.JButton();
+        jButton41 = new javax.swing.JButton();
+        grundbegPane = new javax.swing.JScrollPane();
+        jEditorPane6 = new javax.swing.JEditorPane();
+        KomplexeRechnung = new javax.swing.JPanel();
+        jButton42 = new javax.swing.JButton();
+        jButton43 = new javax.swing.JButton();
+        komplexePane = new javax.swing.JScrollPane();
+        jEditorPane7 = new javax.swing.JEditorPane();
+        Darstellungsformen = new javax.swing.JPanel();
+        jButton44 = new javax.swing.JButton();
+        jButton45 = new javax.swing.JButton();
+        darstellungPane = new javax.swing.JScrollPane();
+        jEditorPane8 = new javax.swing.JEditorPane();
+        Dreiecke = new javax.swing.JPanel();
+        jButton46 = new javax.swing.JButton();
+        jButton47 = new javax.swing.JButton();
+        dreieckePane = new javax.swing.JScrollPane();
+        jEditorPane9 = new javax.swing.JEditorPane();
+        Bruchrechnen = new javax.swing.JPanel();
+        jButton48 = new javax.swing.JButton();
+        jButton49 = new javax.swing.JButton();
+        bruchPane = new javax.swing.JScrollPane();
+        jEditorPane10 = new javax.swing.JEditorPane();
+        TypoCont = new javax.swing.JPanel();
+        jButton52 = new javax.swing.JButton();
+        jButton53 = new javax.swing.JButton();
+        typoPane = new javax.swing.JScrollPane();
+        jEditorPane12 = new javax.swing.JEditorPane();
+        Taschenrechner = new javax.swing.JPanel();
+        jButton54 = new javax.swing.JButton();
+        jButton55 = new javax.swing.JButton();
+        taschenrechnerPane = new javax.swing.JScrollPane();
+        jEditorPane13 = new javax.swing.JEditorPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -99,6 +164,11 @@ public class inFormel_GUI extends javax.swing.JFrame {
         jButton6.setContentAreaFilled(false);
         jButton6.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
         jButton6.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
+        jButton6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton6MouseClicked(evt);
+            }
+        });
 
         jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle_Mathe.png"))); // NOI18N
         jButton7.setBorder(null);
@@ -106,6 +176,11 @@ public class inFormel_GUI extends javax.swing.JFrame {
         jButton7.setContentAreaFilled(false);
         jButton7.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
         jButton7.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
+        jButton7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton7MouseClicked(evt);
+            }
+        });
 
         jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle_Prog.png"))); // NOI18N
         jButton8.setBorder(null);
@@ -118,11 +193,6 @@ public class inFormel_GUI extends javax.swing.JFrame {
                 jButton8MouseClicked(evt);
             }
         });
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
-            }
-        });
 
         jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle_Typo.png"))); // NOI18N
         jButton9.setBorder(null);
@@ -130,9 +200,9 @@ public class inFormel_GUI extends javax.swing.JFrame {
         jButton9.setContentAreaFilled(false);
         jButton9.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
         jButton9.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
-        jButton9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
+        jButton9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton9MouseClicked(evt);
             }
         });
 
@@ -152,18 +222,17 @@ public class inFormel_GUI extends javax.swing.JFrame {
                 .addComponent(jButton5)
                 .addGroup(HauptscreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(HauptscreenLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton8)
-                        .addContainerGap(273, Short.MAX_VALUE))
-                    .addGroup(HauptscreenLayout.createSequentialGroup()
                         .addGap(18, 18, 18)
-                        .addComponent(jButton6)
-                        .addContainerGap(500, Short.MAX_VALUE))))
+                        .addComponent(jButton6))
+                    .addGroup(HauptscreenLayout.createSequentialGroup()
+                        .addGap(164, 164, 164)
+                        .addComponent(jButton8)))
+                .addContainerGap(354, Short.MAX_VALUE))
         );
         HauptscreenLayout.setVerticalGroup(
             HauptscreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(HauptscreenLayout.createSequentialGroup()
-                .addGap(112, 112, 112)
+                .addGap(138, 138, 138)
                 .addGroup(HauptscreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jButton5)
                     .addGroup(HauptscreenLayout.createSequentialGroup()
@@ -177,7 +246,7 @@ public class inFormel_GUI extends javax.swing.JFrame {
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, HauptscreenLayout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jButton8)))))
-                .addContainerGap(299, Short.MAX_VALUE))
+                .addContainerGap(285, Short.MAX_VALUE))
         );
 
         jPanel1.add(Hauptscreen, "mainCard");
@@ -190,20 +259,15 @@ public class inFormel_GUI extends javax.swing.JFrame {
         jButton10.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton10.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
         jButton10.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
-            }
-        });
 
         jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Programmieren/Circle_Klassendef.png"))); // NOI18N
         jButton11.setBorderPainted(false);
         jButton11.setContentAreaFilled(false);
         jButton11.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
         jButton11.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
-        jButton11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton11ActionPerformed(evt);
+        jButton11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton11MouseClicked(evt);
             }
         });
 
@@ -212,9 +276,9 @@ public class inFormel_GUI extends javax.swing.JFrame {
         jButton12.setContentAreaFilled(false);
         jButton12.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
         jButton12.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
-        jButton12.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton12ActionPerformed(evt);
+        jButton12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton12MouseClicked(evt);
             }
         });
 
@@ -234,6 +298,11 @@ public class inFormel_GUI extends javax.swing.JFrame {
         jButton14.setContentAreaFilled(false);
         jButton14.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
         jButton14.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
+        jButton14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton14MouseClicked(evt);
+            }
+        });
 
         jButton15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Programmieren/Circle_if.png"))); // NOI18N
         jButton15.setBorder(null);
@@ -241,6 +310,11 @@ public class inFormel_GUI extends javax.swing.JFrame {
         jButton15.setContentAreaFilled(false);
         jButton15.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
         jButton15.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
+        jButton15.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton15MouseClicked(evt);
+            }
+        });
 
         jButton16.setText("Zurück");
         jButton16.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -249,43 +323,36 @@ public class inFormel_GUI extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setText("jButton1");
-
         javax.swing.GroupLayout ProgrammierenLayout = new javax.swing.GroupLayout(Programmieren);
         Programmieren.setLayout(ProgrammierenLayout);
         ProgrammierenLayout.setHorizontalGroup(
             ProgrammierenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ProgrammierenLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton16)
+                .addContainerGap())
             .addGroup(ProgrammierenLayout.createSequentialGroup()
-                .addContainerGap(690, Short.MAX_VALUE)
+                .addGap(229, 229, 229)
+                .addGroup(ProgrammierenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButton14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton12))
+                .addGap(28, 28, 28)
                 .addGroup(ProgrammierenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ProgrammierenLayout.createSequentialGroup()
-                        .addGroup(ProgrammierenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton12))
-                        .addGap(28, 28, 28)
-                        .addGroup(ProgrammierenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton10)
-                            .addGroup(ProgrammierenLayout.createSequentialGroup()
-                                .addGap(8, 8, 8)
-                                .addComponent(jButton15)))
-                        .addGap(18, 18, 18)
-                        .addGroup(ProgrammierenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton11)
-                            .addComponent(jButton13))
-                        .addGap(83, 83, 83))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ProgrammierenLayout.createSequentialGroup()
-                        .addComponent(jButton16)
-                        .addContainerGap())))
-            .addGroup(ProgrammierenLayout.createSequentialGroup()
-                .addGap(151, 151, 151)
-                .addComponent(jButton1)
-                .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(jButton10)
+                    .addGroup(ProgrammierenLayout.createSequentialGroup()
+                        .addGap(8, 8, 8)
+                        .addComponent(jButton15)))
+                .addGap(18, 18, 18)
+                .addGroup(ProgrammierenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton11)
+                    .addComponent(jButton13))
+                .addContainerGap(544, Short.MAX_VALUE))
         );
         ProgrammierenLayout.setVerticalGroup(
             ProgrammierenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ProgrammierenLayout.createSequentialGroup()
                 .addComponent(jButton16)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 298, Short.MAX_VALUE)
+                .addGap(60, 60, 60)
                 .addGroup(ProgrammierenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(ProgrammierenLayout.createSequentialGroup()
                         .addComponent(jButton15)
@@ -299,9 +366,7 @@ public class inFormel_GUI extends javax.swing.JFrame {
                         .addComponent(jButton11)
                         .addGap(18, 18, 18)
                         .addComponent(jButton13)))
-                .addGap(16, 16, 16)
-                .addComponent(jButton1)
-                .addGap(15, 15, 15))
+                .addContainerGap(310, Short.MAX_VALUE))
         );
 
         jPanel1.add(Programmieren, "progCard");
@@ -323,25 +388,13 @@ public class inFormel_GUI extends javax.swing.JFrame {
 
         arrayPane.setViewportView(jEditorPane1);
 
-        jButton18.setText("jButton13");
-        jButton18.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton18MouseClicked(evt);
-            }
-        });
-
         javax.swing.GroupLayout ArraysLayout = new javax.swing.GroupLayout(Arrays);
         Arrays.setLayout(ArraysLayout);
         ArraysLayout.setHorizontalGroup(
             ArraysLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ArraysLayout.createSequentialGroup()
-                .addGroup(ArraysLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(ArraysLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jButton17))
-                    .addGroup(ArraysLayout.createSequentialGroup()
-                        .addGap(16, 16, 16)
-                        .addComponent(jButton18)))
+                .addContainerGap()
+                .addComponent(jButton17)
                 .addGroup(ArraysLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(ArraysLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -363,12 +416,734 @@ public class inFormel_GUI extends javax.swing.JFrame {
                     .addGroup(ArraysLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jButton17)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 483, Short.MAX_VALUE)
-                .addComponent(jButton18)
-                .addGap(34, 34, 34))
+                .addGap(34, 558, Short.MAX_VALUE))
         );
 
         jPanel1.add(Arrays, "arrayCard");
+
+        Basics.setBackground(new java.awt.Color(255, 255, 255));
+
+        jButton20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle_Basics.png"))); // NOI18N
+        jButton20.setBorderPainted(false);
+        jButton20.setContentAreaFilled(false);
+        jButton20.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jButton20.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
+        jButton20.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
+
+        jButton23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Basics/Circle_Bruchrechnen.png"))); // NOI18N
+        jButton23.setBorderPainted(false);
+        jButton23.setContentAreaFilled(false);
+        jButton23.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
+        jButton23.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
+        jButton23.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton23MouseClicked(evt);
+            }
+        });
+
+        jButton24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Basics/Circle_Taschenrechner.png"))); // NOI18N
+        jButton24.setBorderPainted(false);
+        jButton24.setContentAreaFilled(false);
+        jButton24.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
+        jButton24.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
+        jButton24.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton24MouseClicked(evt);
+            }
+        });
+
+        jButton25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Basics/Circle_Dreiecke.png"))); // NOI18N
+        jButton25.setBorderPainted(false);
+        jButton25.setContentAreaFilled(false);
+        jButton25.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
+        jButton25.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
+        jButton25.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton25MouseClicked(evt);
+            }
+        });
+
+        jButton26.setText("Zurück");
+        jButton26.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton26MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout BasicsLayout = new javax.swing.GroupLayout(Basics);
+        Basics.setLayout(BasicsLayout);
+        BasicsLayout.setHorizontalGroup(
+            BasicsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BasicsLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton26)
+                .addContainerGap())
+            .addGroup(BasicsLayout.createSequentialGroup()
+                .addGap(229, 229, 229)
+                .addComponent(jButton24)
+                .addGap(28, 28, 28)
+                .addGroup(BasicsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton20)
+                    .addGroup(BasicsLayout.createSequentialGroup()
+                        .addGap(8, 8, 8)
+                        .addComponent(jButton25)))
+                .addGap(18, 18, 18)
+                .addComponent(jButton23)
+                .addContainerGap(536, Short.MAX_VALUE))
+        );
+        BasicsLayout.setVerticalGroup(
+            BasicsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BasicsLayout.createSequentialGroup()
+                .addComponent(jButton26)
+                .addGap(60, 60, 60)
+                .addGroup(BasicsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(BasicsLayout.createSequentialGroup()
+                        .addComponent(jButton25)
+                        .addGap(44, 44, 44)
+                        .addComponent(jButton20, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButton24)
+                    .addComponent(jButton23))
+                .addContainerGap(298, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(Basics, "basicsCard");
+
+        Mathe.setBackground(new java.awt.Color(255, 255, 255));
+
+        jButton21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle_Mathe.png"))); // NOI18N
+        jButton21.setBorderPainted(false);
+        jButton21.setContentAreaFilled(false);
+        jButton21.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jButton21.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
+        jButton21.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
+
+        jButton27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Mathe/Circle_Darstellungsformen.png"))); // NOI18N
+        jButton27.setBorderPainted(false);
+        jButton27.setContentAreaFilled(false);
+        jButton27.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
+        jButton27.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
+        jButton27.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton27MouseClicked(evt);
+            }
+        });
+
+        jButton28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Mathe/Circle_Komplexe.png"))); // NOI18N
+        jButton28.setBorderPainted(false);
+        jButton28.setContentAreaFilled(false);
+        jButton28.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
+        jButton28.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
+        jButton28.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton28MouseClicked(evt);
+            }
+        });
+
+        jButton29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Mathe/Circle_Grundbegriffe.png"))); // NOI18N
+        jButton29.setBorderPainted(false);
+        jButton29.setContentAreaFilled(false);
+        jButton29.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
+        jButton29.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
+        jButton29.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton29MouseClicked(evt);
+            }
+        });
+
+        jButton30.setText("Zurück");
+        jButton30.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton30MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout MatheLayout = new javax.swing.GroupLayout(Mathe);
+        Mathe.setLayout(MatheLayout);
+        MatheLayout.setHorizontalGroup(
+            MatheLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MatheLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton30)
+                .addContainerGap())
+            .addGroup(MatheLayout.createSequentialGroup()
+                .addGap(229, 229, 229)
+                .addComponent(jButton28)
+                .addGap(28, 28, 28)
+                .addGroup(MatheLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton21)
+                    .addGroup(MatheLayout.createSequentialGroup()
+                        .addGap(8, 8, 8)
+                        .addComponent(jButton29)))
+                .addGap(18, 18, 18)
+                .addComponent(jButton27)
+                .addContainerGap(536, Short.MAX_VALUE))
+        );
+        MatheLayout.setVerticalGroup(
+            MatheLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MatheLayout.createSequentialGroup()
+                .addComponent(jButton30)
+                .addGap(60, 60, 60)
+                .addGroup(MatheLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(MatheLayout.createSequentialGroup()
+                        .addComponent(jButton29)
+                        .addGap(44, 44, 44)
+                        .addComponent(jButton21, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButton28)
+                    .addComponent(jButton27))
+                .addContainerGap(298, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(Mathe, "matheCard");
+
+        Klassendefinition.setBackground(new java.awt.Color(255, 255, 255));
+
+        jButton22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Programmieren/Circle_Klassendef.png"))); // NOI18N
+        jButton22.setBorderPainted(false);
+        jButton22.setContentAreaFilled(false);
+        jButton22.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
+        jButton22.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
+
+        jButton31.setText("Zurück");
+        jButton31.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton31MouseClicked(evt);
+            }
+        });
+
+        klassdefPane.setViewportView(jEditorPane2);
+
+        javax.swing.GroupLayout KlassendefinitionLayout = new javax.swing.GroupLayout(Klassendefinition);
+        Klassendefinition.setLayout(KlassendefinitionLayout);
+        KlassendefinitionLayout.setHorizontalGroup(
+            KlassendefinitionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(KlassendefinitionLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jButton22)
+                .addGroup(KlassendefinitionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(KlassendefinitionLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton31)
+                        .addContainerGap())
+                    .addGroup(KlassendefinitionLayout.createSequentialGroup()
+                        .addGap(43, 43, 43)
+                        .addComponent(klassdefPane, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(538, Short.MAX_VALUE))))
+        );
+        KlassendefinitionLayout.setVerticalGroup(
+            KlassendefinitionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(KlassendefinitionLayout.createSequentialGroup()
+                .addComponent(klassdefPane)
+                .addContainerGap())
+            .addGroup(KlassendefinitionLayout.createSequentialGroup()
+                .addGroup(KlassendefinitionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton31)
+                    .addGroup(KlassendefinitionLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jButton22)))
+                .addGap(34, 558, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(Klassendefinition, "classdefCard");
+
+        IfAbfragen.setBackground(new java.awt.Color(255, 255, 255));
+
+        jButton33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Programmieren/Circle_if.png"))); // NOI18N
+        jButton33.setBorderPainted(false);
+        jButton33.setContentAreaFilled(false);
+        jButton33.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
+        jButton33.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
+
+        jButton34.setText("Zurück");
+        jButton34.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton34MouseClicked(evt);
+            }
+        });
+
+        ifPane.setViewportView(jEditorPane3);
+
+        javax.swing.GroupLayout IfAbfragenLayout = new javax.swing.GroupLayout(IfAbfragen);
+        IfAbfragen.setLayout(IfAbfragenLayout);
+        IfAbfragenLayout.setHorizontalGroup(
+            IfAbfragenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(IfAbfragenLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jButton33)
+                .addGroup(IfAbfragenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(IfAbfragenLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton34)
+                        .addContainerGap())
+                    .addGroup(IfAbfragenLayout.createSequentialGroup()
+                        .addGap(43, 43, 43)
+                        .addComponent(ifPane, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(538, Short.MAX_VALUE))))
+        );
+        IfAbfragenLayout.setVerticalGroup(
+            IfAbfragenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(IfAbfragenLayout.createSequentialGroup()
+                .addComponent(ifPane)
+                .addContainerGap())
+            .addGroup(IfAbfragenLayout.createSequentialGroup()
+                .addGroup(IfAbfragenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton34)
+                    .addGroup(IfAbfragenLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jButton33)))
+                .addGap(34, 558, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(IfAbfragen, "ifCard");
+
+        Schleifen.setBackground(new java.awt.Color(255, 255, 255));
+
+        jButton36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Programmieren/Circle_Schleifen.png"))); // NOI18N
+        jButton36.setBorderPainted(false);
+        jButton36.setContentAreaFilled(false);
+        jButton36.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
+        jButton36.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
+
+        jButton37.setText("Zurück");
+        jButton37.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton37MouseClicked(evt);
+            }
+        });
+
+        schleifenPane.setViewportView(jEditorPane4);
+
+        javax.swing.GroupLayout SchleifenLayout = new javax.swing.GroupLayout(Schleifen);
+        Schleifen.setLayout(SchleifenLayout);
+        SchleifenLayout.setHorizontalGroup(
+            SchleifenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SchleifenLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jButton36)
+                .addGroup(SchleifenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(SchleifenLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton37)
+                        .addContainerGap())
+                    .addGroup(SchleifenLayout.createSequentialGroup()
+                        .addGap(43, 43, 43)
+                        .addComponent(schleifenPane, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(538, Short.MAX_VALUE))))
+        );
+        SchleifenLayout.setVerticalGroup(
+            SchleifenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SchleifenLayout.createSequentialGroup()
+                .addComponent(schleifenPane)
+                .addContainerGap())
+            .addGroup(SchleifenLayout.createSequentialGroup()
+                .addGroup(SchleifenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton37)
+                    .addGroup(SchleifenLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jButton36)))
+                .addGap(34, 558, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(Schleifen, "schleifenCard");
+
+        ObjundKlassen.setBackground(new java.awt.Color(255, 255, 255));
+
+        jButton38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Programmieren/Circle_ObjundKla.png"))); // NOI18N
+        jButton38.setBorderPainted(false);
+        jButton38.setContentAreaFilled(false);
+        jButton38.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
+        jButton38.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
+
+        jButton39.setText("Zurück");
+        jButton39.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton39MouseClicked(evt);
+            }
+        });
+
+        objklassPane.setViewportView(jEditorPane5);
+
+        javax.swing.GroupLayout ObjundKlassenLayout = new javax.swing.GroupLayout(ObjundKlassen);
+        ObjundKlassen.setLayout(ObjundKlassenLayout);
+        ObjundKlassenLayout.setHorizontalGroup(
+            ObjundKlassenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ObjundKlassenLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jButton38)
+                .addGroup(ObjundKlassenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(ObjundKlassenLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton39)
+                        .addContainerGap())
+                    .addGroup(ObjundKlassenLayout.createSequentialGroup()
+                        .addGap(43, 43, 43)
+                        .addComponent(objklassPane, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(538, Short.MAX_VALUE))))
+        );
+        ObjundKlassenLayout.setVerticalGroup(
+            ObjundKlassenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ObjundKlassenLayout.createSequentialGroup()
+                .addComponent(objklassPane)
+                .addContainerGap())
+            .addGroup(ObjundKlassenLayout.createSequentialGroup()
+                .addGroup(ObjundKlassenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton39)
+                    .addGroup(ObjundKlassenLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jButton38)))
+                .addGap(34, 558, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(ObjundKlassen, "objklaCard");
+
+        GrundbegriffeMathe.setBackground(new java.awt.Color(255, 255, 255));
+
+        jButton40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Mathe/Circle_Grundbegriffe.png"))); // NOI18N
+        jButton40.setBorderPainted(false);
+        jButton40.setContentAreaFilled(false);
+        jButton40.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
+        jButton40.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
+
+        jButton41.setText("Zurück");
+        jButton41.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton41MouseClicked(evt);
+            }
+        });
+
+        grundbegPane.setViewportView(jEditorPane6);
+
+        javax.swing.GroupLayout GrundbegriffeMatheLayout = new javax.swing.GroupLayout(GrundbegriffeMathe);
+        GrundbegriffeMathe.setLayout(GrundbegriffeMatheLayout);
+        GrundbegriffeMatheLayout.setHorizontalGroup(
+            GrundbegriffeMatheLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(GrundbegriffeMatheLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jButton40)
+                .addGroup(GrundbegriffeMatheLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(GrundbegriffeMatheLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton41)
+                        .addContainerGap())
+                    .addGroup(GrundbegriffeMatheLayout.createSequentialGroup()
+                        .addGap(43, 43, 43)
+                        .addComponent(grundbegPane, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(538, Short.MAX_VALUE))))
+        );
+        GrundbegriffeMatheLayout.setVerticalGroup(
+            GrundbegriffeMatheLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(GrundbegriffeMatheLayout.createSequentialGroup()
+                .addComponent(grundbegPane)
+                .addContainerGap())
+            .addGroup(GrundbegriffeMatheLayout.createSequentialGroup()
+                .addGroup(GrundbegriffeMatheLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton41)
+                    .addGroup(GrundbegriffeMatheLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jButton40)))
+                .addGap(34, 558, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(GrundbegriffeMathe, "grundbegCard");
+
+        KomplexeRechnung.setBackground(new java.awt.Color(255, 255, 255));
+
+        jButton42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Mathe/Circle_Komplexe.png"))); // NOI18N
+        jButton42.setBorderPainted(false);
+        jButton42.setContentAreaFilled(false);
+        jButton42.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
+        jButton42.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
+
+        jButton43.setText("Zurück");
+        jButton43.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton43MouseClicked(evt);
+            }
+        });
+
+        komplexePane.setViewportView(jEditorPane7);
+
+        javax.swing.GroupLayout KomplexeRechnungLayout = new javax.swing.GroupLayout(KomplexeRechnung);
+        KomplexeRechnung.setLayout(KomplexeRechnungLayout);
+        KomplexeRechnungLayout.setHorizontalGroup(
+            KomplexeRechnungLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(KomplexeRechnungLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jButton42)
+                .addGroup(KomplexeRechnungLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(KomplexeRechnungLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton43)
+                        .addContainerGap())
+                    .addGroup(KomplexeRechnungLayout.createSequentialGroup()
+                        .addGap(43, 43, 43)
+                        .addComponent(komplexePane, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(538, Short.MAX_VALUE))))
+        );
+        KomplexeRechnungLayout.setVerticalGroup(
+            KomplexeRechnungLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(KomplexeRechnungLayout.createSequentialGroup()
+                .addComponent(komplexePane)
+                .addContainerGap())
+            .addGroup(KomplexeRechnungLayout.createSequentialGroup()
+                .addGroup(KomplexeRechnungLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton43)
+                    .addGroup(KomplexeRechnungLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jButton42)))
+                .addGap(34, 558, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(KomplexeRechnung, "komplexeCard");
+
+        Darstellungsformen.setBackground(new java.awt.Color(255, 255, 255));
+
+        jButton44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Mathe/Circle_Darstellungsformen.png"))); // NOI18N
+        jButton44.setBorderPainted(false);
+        jButton44.setContentAreaFilled(false);
+        jButton44.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
+        jButton44.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
+
+        jButton45.setText("Zurück");
+        jButton45.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton45MouseClicked(evt);
+            }
+        });
+
+        darstellungPane.setViewportView(jEditorPane8);
+
+        javax.swing.GroupLayout DarstellungsformenLayout = new javax.swing.GroupLayout(Darstellungsformen);
+        Darstellungsformen.setLayout(DarstellungsformenLayout);
+        DarstellungsformenLayout.setHorizontalGroup(
+            DarstellungsformenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(DarstellungsformenLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jButton44)
+                .addGroup(DarstellungsformenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(DarstellungsformenLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton45)
+                        .addContainerGap())
+                    .addGroup(DarstellungsformenLayout.createSequentialGroup()
+                        .addGap(43, 43, 43)
+                        .addComponent(darstellungPane, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(538, Short.MAX_VALUE))))
+        );
+        DarstellungsformenLayout.setVerticalGroup(
+            DarstellungsformenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(DarstellungsformenLayout.createSequentialGroup()
+                .addComponent(darstellungPane)
+                .addContainerGap())
+            .addGroup(DarstellungsformenLayout.createSequentialGroup()
+                .addGroup(DarstellungsformenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton45)
+                    .addGroup(DarstellungsformenLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jButton44)))
+                .addGap(34, 558, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(Darstellungsformen, "darformCard");
+
+        Dreiecke.setBackground(new java.awt.Color(255, 255, 255));
+
+        jButton46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Basics/Circle_Dreiecke.png"))); // NOI18N
+        jButton46.setBorderPainted(false);
+        jButton46.setContentAreaFilled(false);
+        jButton46.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
+        jButton46.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
+
+        jButton47.setText("Zurück");
+        jButton47.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton47MouseClicked(evt);
+            }
+        });
+
+        dreieckePane.setViewportView(jEditorPane9);
+
+        javax.swing.GroupLayout DreieckeLayout = new javax.swing.GroupLayout(Dreiecke);
+        Dreiecke.setLayout(DreieckeLayout);
+        DreieckeLayout.setHorizontalGroup(
+            DreieckeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(DreieckeLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jButton46)
+                .addGroup(DreieckeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(DreieckeLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton47)
+                        .addContainerGap())
+                    .addGroup(DreieckeLayout.createSequentialGroup()
+                        .addGap(43, 43, 43)
+                        .addComponent(dreieckePane, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(538, Short.MAX_VALUE))))
+        );
+        DreieckeLayout.setVerticalGroup(
+            DreieckeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(DreieckeLayout.createSequentialGroup()
+                .addComponent(dreieckePane)
+                .addContainerGap())
+            .addGroup(DreieckeLayout.createSequentialGroup()
+                .addGroup(DreieckeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton47)
+                    .addGroup(DreieckeLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jButton46)))
+                .addGap(34, 558, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(Dreiecke, "dreieckCard");
+
+        Bruchrechnen.setBackground(new java.awt.Color(255, 255, 255));
+
+        jButton48.setIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Basics/Circle_Bruchrechnen.png"))); // NOI18N
+        jButton48.setBorderPainted(false);
+        jButton48.setContentAreaFilled(false);
+        jButton48.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
+        jButton48.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
+
+        jButton49.setText("Zurück");
+        jButton49.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton49MouseClicked(evt);
+            }
+        });
+
+        bruchPane.setViewportView(jEditorPane10);
+
+        javax.swing.GroupLayout BruchrechnenLayout = new javax.swing.GroupLayout(Bruchrechnen);
+        Bruchrechnen.setLayout(BruchrechnenLayout);
+        BruchrechnenLayout.setHorizontalGroup(
+            BruchrechnenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BruchrechnenLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jButton48)
+                .addGroup(BruchrechnenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(BruchrechnenLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton49)
+                        .addContainerGap())
+                    .addGroup(BruchrechnenLayout.createSequentialGroup()
+                        .addGap(43, 43, 43)
+                        .addComponent(bruchPane, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(538, Short.MAX_VALUE))))
+        );
+        BruchrechnenLayout.setVerticalGroup(
+            BruchrechnenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BruchrechnenLayout.createSequentialGroup()
+                .addComponent(bruchPane)
+                .addContainerGap())
+            .addGroup(BruchrechnenLayout.createSequentialGroup()
+                .addGroup(BruchrechnenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton49)
+                    .addGroup(BruchrechnenLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jButton48)))
+                .addGap(34, 558, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(Bruchrechnen, "bruchCard");
+
+        TypoCont.setBackground(new java.awt.Color(255, 255, 255));
+
+        jButton52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle_Typo.png"))); // NOI18N
+        jButton52.setBorderPainted(false);
+        jButton52.setContentAreaFilled(false);
+        jButton52.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
+        jButton52.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
+
+        jButton53.setText("Zurück");
+        jButton53.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton53MouseClicked(evt);
+            }
+        });
+
+        typoPane.setViewportView(jEditorPane12);
+
+        javax.swing.GroupLayout TypoContLayout = new javax.swing.GroupLayout(TypoCont);
+        TypoCont.setLayout(TypoContLayout);
+        TypoContLayout.setHorizontalGroup(
+            TypoContLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(TypoContLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jButton52)
+                .addGroup(TypoContLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(TypoContLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton53)
+                        .addContainerGap())
+                    .addGroup(TypoContLayout.createSequentialGroup()
+                        .addGap(43, 43, 43)
+                        .addComponent(typoPane, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(538, Short.MAX_VALUE))))
+        );
+        TypoContLayout.setVerticalGroup(
+            TypoContLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(TypoContLayout.createSequentialGroup()
+                .addComponent(typoPane)
+                .addContainerGap())
+            .addGroup(TypoContLayout.createSequentialGroup()
+                .addGroup(TypoContLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton53)
+                    .addGroup(TypoContLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jButton52)))
+                .addGap(34, 558, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(TypoCont, "typoCard");
+
+        Taschenrechner.setBackground(new java.awt.Color(255, 255, 255));
+
+        jButton54.setIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Basics/Circle_Taschenrechner.png"))); // NOI18N
+        jButton54.setBorderPainted(false);
+        jButton54.setContentAreaFilled(false);
+        jButton54.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
+        jButton54.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
+
+        jButton55.setText("Zurück");
+        jButton55.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton55MouseClicked(evt);
+            }
+        });
+
+        taschenrechnerPane.setViewportView(jEditorPane13);
+
+        javax.swing.GroupLayout TaschenrechnerLayout = new javax.swing.GroupLayout(Taschenrechner);
+        Taschenrechner.setLayout(TaschenrechnerLayout);
+        TaschenrechnerLayout.setHorizontalGroup(
+            TaschenrechnerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(TaschenrechnerLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jButton54)
+                .addGroup(TaschenrechnerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(TaschenrechnerLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton55)
+                        .addContainerGap())
+                    .addGroup(TaschenrechnerLayout.createSequentialGroup()
+                        .addGap(43, 43, 43)
+                        .addComponent(taschenrechnerPane, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(538, Short.MAX_VALUE))))
+        );
+        TaschenrechnerLayout.setVerticalGroup(
+            TaschenrechnerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(TaschenrechnerLayout.createSequentialGroup()
+                .addComponent(taschenrechnerPane)
+                .addContainerGap())
+            .addGroup(TaschenrechnerLayout.createSequentialGroup()
+                .addGroup(TaschenrechnerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton55)
+                    .addGroup(TaschenrechnerLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jButton54)))
+                .addGap(34, 558, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(Taschenrechner, "rechnerCard");
 
         jMenu1.setText("Home");
         jMenu1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -409,30 +1184,9 @@ public class inFormel_GUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton8MouseClicked
-        Hauptscreen.setVisible(false);
-        Programmieren.setVisible(true);
-        Arrays.setVisible(false);
+        CardLayout card = (CardLayout)jPanel1.getLayout();
+        card.show(jPanel1, "progCard");
     }//GEN-LAST:event_jButton8MouseClicked
-
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-
-    }//GEN-LAST:event_jButton8ActionPerformed
-
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton9ActionPerformed
-
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton10ActionPerformed
-
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton11ActionPerformed
-
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton12ActionPerformed
 
     private void jButton13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton13MouseClicked
        CardLayout card = (CardLayout)jPanel1.getLayout();
@@ -454,17 +1208,6 @@ public class inFormel_GUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton19MouseClicked
 
-    private void jButton18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton18MouseClicked
-        
-        try {
-            htmlToJavaPanel objArrayPanel = new htmlToJavaPanel(arrayPane, new File(assetsUrl + "/HTML_Programmieren/HTML_Template.html").toURI().toURL());
-            objArrayPanel.buildPane();
-        } catch (IOException e) {
-            System.err.println("Attempted to read a bad URL");
-        }
-        
-    }//GEN-LAST:event_jButton18MouseClicked
-
     private void jMenu1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu1MouseClicked
         // TODO add your handling code here:
         CardLayout card = (CardLayout)jPanel1.getLayout();
@@ -476,6 +1219,183 @@ public class inFormel_GUI extends javax.swing.JFrame {
         CardLayout card = (CardLayout)jPanel1.getLayout();
         card.previous(jPanel1);
     }//GEN-LAST:event_jMenu2MouseClicked
+
+    private void jButton23MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton23MouseClicked
+        CardLayout card = (CardLayout)jPanel1.getLayout();
+        card.show(jPanel1, "bruchCard");
+        try {
+            htmlToJavaPanel objBruchPanel = new htmlToJavaPanel(bruchPane, new File("/Users/denisehfg/Documents/Semester 2/Programmieren 2/inFormel/P2_De_Le_Fe_To/HTML_Theorie/HTML_Basics/Bruchrechnen/HTML_Template.html").toURI().toURL());
+            objBruchPanel.buildPane();
+        } catch (IOException e) {
+            System.err.println("Attempted to read a bad URL");
+        }
+    }//GEN-LAST:event_jButton23MouseClicked
+
+    private void jButton26MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton26MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton26MouseClicked
+
+    private void jButton27MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton27MouseClicked
+        CardLayout card = (CardLayout)jPanel1.getLayout();
+        card.show(jPanel1, "darformCard");
+        try {
+            htmlToJavaPanel objdarformPanel = new htmlToJavaPanel(darstellungPane, new File("/Users/denisehfg/Documents/Semester 2/Programmieren 2/inFormel/P2_De_Le_Fe_To/HTML_Theorie/HTML_Mathe1/HTML_Mathe1.html").toURI().toURL());
+            objdarformPanel.buildPane();
+        } catch (IOException e) {
+            System.err.println("Attempted to read a bad URL");
+        }
+    }//GEN-LAST:event_jButton27MouseClicked
+
+    private void jButton30MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton30MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton30MouseClicked
+
+    private void jButton31MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton31MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton31MouseClicked
+
+    private void jButton34MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton34MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton34MouseClicked
+
+    private void jButton37MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton37MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton37MouseClicked
+
+    private void jButton39MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton39MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton39MouseClicked
+
+    private void jButton41MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton41MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton41MouseClicked
+
+    private void jButton43MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton43MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton43MouseClicked
+
+    private void jButton45MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton45MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton45MouseClicked
+
+    private void jButton47MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton47MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton47MouseClicked
+
+    private void jButton49MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton49MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton49MouseClicked
+
+    private void jButton53MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton53MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton53MouseClicked
+
+    private void jButton55MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton55MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton55MouseClicked
+
+    private void jButton6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton6MouseClicked
+        CardLayout card = (CardLayout)jPanel1.getLayout();
+        card.show(jPanel1, "basicsCard");
+    }//GEN-LAST:event_jButton6MouseClicked
+
+    private void jButton7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton7MouseClicked
+        CardLayout card = (CardLayout)jPanel1.getLayout();
+        card.show(jPanel1, "matheCard");
+    }//GEN-LAST:event_jButton7MouseClicked
+
+    private void jButton9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton9MouseClicked
+        CardLayout card = (CardLayout)jPanel1.getLayout();
+        card.show(jPanel1, "typoCard");
+          try {
+            htmlToJavaPanel objtypoPanel = new htmlToJavaPanel(typoPane, new File("/Users/denisehfg/Documents/Semester 2/Programmieren 2/inFormel/P2_De_Le_Fe_To/HTML_Theorie/HTML_Typografie/HTML_Template.html").toURI().toURL());
+            objtypoPanel.buildPane();
+        } catch (IOException e) {
+            System.err.println("Attempted to read a bad URL");
+        }
+    }//GEN-LAST:event_jButton9MouseClicked
+
+    private void jButton11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton11MouseClicked
+        CardLayout card = (CardLayout)jPanel1.getLayout();
+        card.show(jPanel1, "classdefCard");
+        try {
+            htmlToJavaPanel objclassdefPanel = new htmlToJavaPanel(klassdefPane, new File("/Users/denisehfg/Documents/Semester 2/Programmieren 2/inFormel/P2_De_Le_Fe_To/HTML_Theorie/HTML_Programmieren/HTML_Template.html").toURI().toURL());
+            objclassdefPanel.buildPane();
+        } catch (IOException e) {
+            System.err.println("Attempted to read a bad URL");
+        }
+    }//GEN-LAST:event_jButton11MouseClicked
+
+    private void jButton15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton15MouseClicked
+        CardLayout card = (CardLayout)jPanel1.getLayout();
+        card.show(jPanel1, "ifCard");
+        try {
+            htmlToJavaPanel objifPanel = new htmlToJavaPanel(ifPane, new File("/Users/denisehfg/Documents/Semester 2/Programmieren 2/inFormel/P2_De_Le_Fe_To/HTML_Theorie/HTML_Programmieren/HTML_Template.html").toURI().toURL());
+            objifPanel.buildPane();
+        } catch (IOException e) {
+            System.err.println("Attempted to read a bad URL");
+        }
+    }//GEN-LAST:event_jButton15MouseClicked
+
+    private void jButton12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton12MouseClicked
+        CardLayout card = (CardLayout)jPanel1.getLayout();
+        card.show(jPanel1, "schleifenCard");
+        try {
+            htmlToJavaPanel objschleifenPanel = new htmlToJavaPanel(schleifenPane, new File("/Users/denisehfg/Documents/Semester 2/Programmieren 2/inFormel/P2_De_Le_Fe_To/HTML_Theorie/HTML_Programmieren/HTML_Template.html").toURI().toURL());
+            objschleifenPanel.buildPane();
+        } catch (IOException e) {
+            System.err.println("Attempted to read a bad URL");
+        }
+    }//GEN-LAST:event_jButton12MouseClicked
+
+    private void jButton14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton14MouseClicked
+        CardLayout card = (CardLayout)jPanel1.getLayout();
+        card.show(jPanel1, "objklaCard");
+        try {
+            htmlToJavaPanel objobjklaPanel = new htmlToJavaPanel(objklassPane, new File("/Users/denisehfg/Documents/Semester 2/Programmieren 2/inFormel/P2_De_Le_Fe_To/HTML_Theorie/HTML_Programmieren/HTML_Template.html").toURI().toURL());
+            objobjklaPanel.buildPane();
+        } catch (IOException e) {
+            System.err.println("Attempted to read a bad URL");
+        }
+    }//GEN-LAST:event_jButton14MouseClicked
+
+    private void jButton25MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton25MouseClicked
+        CardLayout card = (CardLayout)jPanel1.getLayout();
+        card.show(jPanel1, "dreiceckCard");
+          try {
+            htmlToJavaPanel objdreieckePanel = new htmlToJavaPanel(dreieckePane, new File("/Users/denisehfg/Documents/Semester 2/Programmieren 2/inFormel/P2_De_Le_Fe_To/HTML_Theorie/HTML_Basics/Dreiecke/HTML_Template.html").toURI().toURL());
+            objdreieckePanel.buildPane();
+        } catch (IOException e) {
+            System.err.println("Attempted to read a bad URL");
+        }
+    }//GEN-LAST:event_jButton25MouseClicked
+
+    private void jButton24MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton24MouseClicked
+        CardLayout card = (CardLayout)jPanel1.getLayout();
+        card.show(jPanel1, "rechnerCard");
+    }//GEN-LAST:event_jButton24MouseClicked
+
+    private void jButton29MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton29MouseClicked
+        CardLayout card = (CardLayout)jPanel1.getLayout();
+        card.show(jPanel1, "grundbegCard");
+        try {
+            htmlToJavaPanel objgrundbegPanel = new htmlToJavaPanel(grundbegPane, new File("/Users/denisehfg/Documents/Semester 2/Programmieren 2/inFormel/P2_De_Le_Fe_To/HTML_Theorie/HTML_Mathe1/HTML_Mathe1.html").toURI().toURL());
+            objgrundbegPanel.buildPane();
+        } catch (IOException e) {
+            System.err.println("Attempted to read a bad URL");
+        }
+    }//GEN-LAST:event_jButton29MouseClicked
+
+    private void jButton28MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton28MouseClicked
+        CardLayout card = (CardLayout)jPanel1.getLayout();
+        card.show(jPanel1, "komplexeCard");
+        try {
+            htmlToJavaPanel objkomplexePanel = new htmlToJavaPanel(komplexePane, new File("/Users/denisehfg/Documents/Semester 2/Programmieren 2/inFormel/P2_De_Le_Fe_To/HTML_Theorie/HTML_Mathe1/HTML_Mathe1.html").toURI().toURL());
+            objkomplexePanel.buildPane();
+        } catch (IOException e) {
+            System.err.println("Attempted to read a bad URL");
+        }
+    }//GEN-LAST:event_jButton28MouseClicked
 
     /**
      * @param args the command line arguments
@@ -515,10 +1435,27 @@ public class inFormel_GUI extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Arrays;
+    private javax.swing.JPanel Basics;
+    private javax.swing.JPanel Bruchrechnen;
+    private javax.swing.JPanel Darstellungsformen;
+    private javax.swing.JPanel Dreiecke;
+    private javax.swing.JPanel GrundbegriffeMathe;
     private javax.swing.JPanel Hauptscreen;
+    private javax.swing.JPanel IfAbfragen;
+    private javax.swing.JPanel Klassendefinition;
+    private javax.swing.JPanel KomplexeRechnung;
+    private javax.swing.JPanel Mathe;
+    private javax.swing.JPanel ObjundKlassen;
     private javax.swing.JPanel Programmieren;
+    private javax.swing.JPanel Schleifen;
+    private javax.swing.JPanel Taschenrechner;
+    private javax.swing.JPanel TypoCont;
     private javax.swing.JScrollPane arrayPane;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JScrollPane bruchPane;
+    private javax.swing.JScrollPane darstellungPane;
+    private javax.swing.JScrollPane dreieckePane;
+    private javax.swing.JScrollPane grundbegPane;
+    private javax.swing.JScrollPane ifPane;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
@@ -527,17 +1464,65 @@ public class inFormel_GUI extends javax.swing.JFrame {
     private javax.swing.JButton jButton15;
     private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton18;
     private javax.swing.JButton jButton19;
+    private javax.swing.JButton jButton20;
+    private javax.swing.JButton jButton21;
+    private javax.swing.JButton jButton22;
+    private javax.swing.JButton jButton23;
+    private javax.swing.JButton jButton24;
+    private javax.swing.JButton jButton25;
+    private javax.swing.JButton jButton26;
+    private javax.swing.JButton jButton27;
+    private javax.swing.JButton jButton28;
+    private javax.swing.JButton jButton29;
+    private javax.swing.JButton jButton30;
+    private javax.swing.JButton jButton31;
+    private javax.swing.JButton jButton33;
+    private javax.swing.JButton jButton34;
+    private javax.swing.JButton jButton36;
+    private javax.swing.JButton jButton37;
+    private javax.swing.JButton jButton38;
+    private javax.swing.JButton jButton39;
+    private javax.swing.JButton jButton40;
+    private javax.swing.JButton jButton41;
+    private javax.swing.JButton jButton42;
+    private javax.swing.JButton jButton43;
+    private javax.swing.JButton jButton44;
+    private javax.swing.JButton jButton45;
+    private javax.swing.JButton jButton46;
+    private javax.swing.JButton jButton47;
+    private javax.swing.JButton jButton48;
+    private javax.swing.JButton jButton49;
     private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton52;
+    private javax.swing.JButton jButton53;
+    private javax.swing.JButton jButton54;
+    private javax.swing.JButton jButton55;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JEditorPane jEditorPane1;
+    private javax.swing.JEditorPane jEditorPane10;
+    private javax.swing.JEditorPane jEditorPane12;
+    private javax.swing.JEditorPane jEditorPane13;
+    private javax.swing.JEditorPane jEditorPane2;
+    private javax.swing.JEditorPane jEditorPane3;
+    private javax.swing.JEditorPane jEditorPane4;
+    private javax.swing.JEditorPane jEditorPane5;
+    private javax.swing.JEditorPane jEditorPane6;
+    private javax.swing.JEditorPane jEditorPane7;
+    private javax.swing.JEditorPane jEditorPane8;
+    private javax.swing.JEditorPane jEditorPane9;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane klassdefPane;
+    private javax.swing.JScrollPane komplexePane;
+    private javax.swing.JScrollPane objklassPane;
+    private javax.swing.JScrollPane schleifenPane;
+    private javax.swing.JScrollPane taschenrechnerPane;
+    private javax.swing.JScrollPane typoPane;
     // End of variables declaration//GEN-END:variables
 }
