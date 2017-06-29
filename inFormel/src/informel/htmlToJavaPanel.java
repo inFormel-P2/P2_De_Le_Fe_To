@@ -5,54 +5,33 @@
  */
 package informel;
 
-import java.io.File;
-import java.io.IOException;
-import javax.swing.JEditorPane;
-import javax.swing.JFileChooser;
-import java.io.File;
-import java.awt.CardLayout;
-import javafx.scene.Scene;
-import javafx.scene.web.WebView;
 import java.io.*;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
-import javax.swing.event.*;
 
-
-import java.net.URI;
-import javafx.application.Platform;
-import javafx.embed.swing.JFXPanel;
-import javax.swing.JFrame;
-import javax.swing.text.Document;
-import javax.swing.text.html.HTMLEditorKit;
-import javax.swing.text.html.StyleSheet;
-
-/**
- *
- * @author denisehfg
- */
+    
 public class htmlToJavaPanel {
     
+    /*
+    Im Konstruktor werden die Variablen zum übersetzen einer Url und zum erstellen eines Scrollpane Objekts mitgegeben.
+    */
     private java.net.URL url;
     private JScrollPane pane;
     
+    /*
+     *In der Methode wird den Variablen ein Wert übergeben.
+     */
     public htmlToJavaPanel(JScrollPane pPane, java.net.URL pUrl) {
         url = pUrl;
         pane = pPane;
     
     }
     
-    public void setUrl(java.net.URL pUrl){
-        url = pUrl;
-    
-    }
-    
-    
-    public void setPane(JScrollPane pPane){
-        pane = pPane;
-        
-    }
+    /*
+    Die Methode erstellt unsere EditorPane, wo die HTML Seite geladen und angezeigt wird.
+    Zusätzlich wird die EditorPane als nicht editierbar gesetzt, somit kann der Content nicht geändert werden.
+    Die EditorPane selbst wird in einer ScrollPane angezeigt, somit haben wir die Möglichkeit den Content scollbar zu machen.
+    */
     
     public void buildPane() {
         // create jeditorpane
