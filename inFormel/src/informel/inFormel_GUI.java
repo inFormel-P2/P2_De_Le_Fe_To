@@ -120,10 +120,6 @@ public class inFormel_GUI extends javax.swing.JFrame {
         jButton52 = new javax.swing.JButton();
         typoPane = new javax.swing.JScrollPane();
         jEditorPane12 = new javax.swing.JEditorPane();
-        Taschenrechner = new javax.swing.JPanel();
-        jButton54 = new javax.swing.JButton();
-        taschenrechnerPane = new javax.swing.JScrollPane();
-        jEditorPane13 = new javax.swing.JEditorPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
 
@@ -870,40 +866,6 @@ public class inFormel_GUI extends javax.swing.JFrame {
 
         jPanel1.add(TypoCont, "typoCard");
 
-        Taschenrechner.setBackground(new java.awt.Color(255, 255, 255));
-
-        jButton54.setIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Basics/Circle_Taschenrechner.png"))); // NOI18N
-        jButton54.setBorderPainted(false);
-        jButton54.setContentAreaFilled(false);
-        jButton54.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
-        jButton54.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/informel/Images/Circle.png"))); // NOI18N
-
-        taschenrechnerPane.setViewportView(jEditorPane13);
-
-        javax.swing.GroupLayout TaschenrechnerLayout = new javax.swing.GroupLayout(Taschenrechner);
-        Taschenrechner.setLayout(TaschenrechnerLayout);
-        TaschenrechnerLayout.setHorizontalGroup(
-            TaschenrechnerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(TaschenrechnerLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jButton54)
-                .addGap(43, 43, 43)
-                .addComponent(taschenrechnerPane, javax.swing.GroupLayout.PREFERRED_SIZE, 1000, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(24, Short.MAX_VALUE))
-        );
-        TaschenrechnerLayout.setVerticalGroup(
-            TaschenrechnerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(TaschenrechnerLayout.createSequentialGroup()
-                .addComponent(taschenrechnerPane, javax.swing.GroupLayout.DEFAULT_SIZE, 681, Short.MAX_VALUE)
-                .addContainerGap())
-            .addGroup(TaschenrechnerLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jButton54)
-                .addGap(34, 558, Short.MAX_VALUE))
-        );
-
-        jPanel1.add(Taschenrechner, "rechnerCard");
-
         jMenu1.setText("Home");
         jMenu1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -1127,12 +1089,13 @@ public class inFormel_GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton25MouseClicked
     /*
      * In dieser Methode geben wir dem Button das Event "MousClicked" mit.
-     * Wenn der Button geklickt wird, wird die Taschenrechner Karte aufgerufen.
+     * Wenn der Button geklickt wird, wird die unsere Klasse Taschenrechner aufgerufen und auf sichtbar gesetzt.
      * @param evt 
      */
     private void jButton24MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton24MouseClicked
-        CardLayout card = (CardLayout)jPanel1.getLayout();
-        card.show(jPanel1, "rechnerCard");
+       Calculator Taschenrechner = new Calculator();
+        Taschenrechner.setVisible(true);
+    
     }//GEN-LAST:event_jButton24MouseClicked
     /*
      * Diese Methode verwendet auch das Event "MouseClicked"
@@ -1225,7 +1188,6 @@ public class inFormel_GUI extends javax.swing.JFrame {
     private javax.swing.JPanel ObjundKlassen;
     private javax.swing.JPanel Programmieren;
     private javax.swing.JPanel Schleifen;
-    private javax.swing.JPanel Taschenrechner;
     private javax.swing.JPanel TypoCont;
     private javax.swing.JScrollPane arrayPane;
     private javax.swing.JScrollPane bruchPane;
@@ -1259,7 +1221,6 @@ public class inFormel_GUI extends javax.swing.JFrame {
     private javax.swing.JButton jButton48;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton52;
-    private javax.swing.JButton jButton54;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
@@ -1267,7 +1228,6 @@ public class inFormel_GUI extends javax.swing.JFrame {
     private javax.swing.JEditorPane jEditorPane1;
     private javax.swing.JEditorPane jEditorPane10;
     private javax.swing.JEditorPane jEditorPane12;
-    private javax.swing.JEditorPane jEditorPane13;
     private javax.swing.JEditorPane jEditorPane2;
     private javax.swing.JEditorPane jEditorPane3;
     private javax.swing.JEditorPane jEditorPane4;
@@ -1283,7 +1243,6 @@ public class inFormel_GUI extends javax.swing.JFrame {
     private javax.swing.JScrollPane komplexePane;
     private javax.swing.JScrollPane objklassPane;
     private javax.swing.JScrollPane schleifenPane;
-    private javax.swing.JScrollPane taschenrechnerPane;
     private javax.swing.JScrollPane typoPane;
     // End of variables declaration//GEN-END:variables
 }

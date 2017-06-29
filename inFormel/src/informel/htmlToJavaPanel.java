@@ -13,7 +13,7 @@ import java.awt.*;
 public class htmlToJavaPanel {
     
     /*
-    Im Konstruktor werden die Variablen zum übersetzen einer Url und zum erstellen eines Scrollpane Objekts mitgegeben.
+    Im Konstruktor werden die Variablen zum generieren einer Url und zum erstellen eines Scrollpane Objekts mitgegeben.
     */
     private java.net.URL url;
     private JScrollPane pane;
